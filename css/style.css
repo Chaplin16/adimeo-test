@@ -106,10 +106,12 @@ header .sidebar__icone i::after {
   top: 55px;
 }
 header .header {
-  margin-left: 8rem;
-  padding-top: 8.7rem;
+  display: flex;
+  flex-direction: column;
 }
 header .header .header__titre {
+  margin-left: 8rem;
+  padding-top: 8.7rem;
   color: #f1f1f1;
 }
 header .header .header__titre h1 {

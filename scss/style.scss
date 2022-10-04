@@ -113,9 +113,11 @@ header{
 
 // headerleft
     .header{
-        margin-left: 8rem;
-        padding-top: 8.7rem;
+        display: flex;
+        flex-direction: column;
         .header__titre{
+            margin-left: 8rem;
+            padding-top: 8.7rem;
             color: $white;
             h1{
                 font-size: 2.5rem;
