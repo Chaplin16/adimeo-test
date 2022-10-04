@@ -239,3 +239,9 @@ header{
         }
     }
 }
+
+@media screen and (min-width: 1300px){
+    header .header__titre h1{
+        font-size: 3.5rem!important;
+    }
+}
