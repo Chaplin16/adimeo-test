@@ -64,6 +64,7 @@ header .sidebar__icone {
 }
 header .sidebar__icone--link {
   position: relative;
+  cursor: default;
 }
 header .sidebar__icone--link::after {
   content: "";
