@@ -112,13 +112,13 @@ header .sidebar__icone i::after {
 header .header {
   display: flex;
   flex-direction: column;
+  background-color: #434B9C;
 }
 header .header .header__titre {
   margin-left: 8rem;
   padding-top: 2rem;
   color: #fff;
   min-width: 20rem;
-  max-width: 600px;
 }
 header .header .header__titre h1 {
   font-size: 2rem;
@@ -162,7 +162,7 @@ header .header .header__titre button {
   font-family: "Museo sans 300";
 }
 header .header .header__titre .header__titre--social-networks {
-  margin-top: 7rem;
+  margin-top: 5rem;
   display: flex;
   align-items: center;
   column-gap: 1.5rem;
@@ -196,7 +196,7 @@ header .header .header__photo figure {
   margin-left: 1.05rem;
 }
 header .header .header__photo figure img {
-  height: 750px;
+  max-height: 650px;
   object-fit: cover;
 }
 header .header .header__photo figure figcaption {
@@ -216,22 +216,28 @@ header .header .header__photo figure figcaption img {
   height: auto;
 }
 
-@media screen and (min-width: 1000px) {
-  .header {
+@media screen and (min-width: 1100px) {
+  header .header {
     flex-direction: row !important;
-    height: 650px;
   }
-  .header__titre h1 {
+  header .header__titre h1 {
     position: absolute;
+    top: 11rem;
     z-index: 10;
     font-size: 3.4rem !important;
   }
-  .header .header__titre {
+  header .header .header__titre {
     margin-top: 8.25rem;
+    min-width: 20rem;
+    height: 37.5rem !important;
   }
-  .header .header__titre--calendar {
+  header .header .header__titre--calendar {
     min-width: 500px !important;
-    margin-top: 12rem;
+    margin-top: 15rem;
+    margin-bottom: 1.5rem;
+  }
+  header .header .header__titre--social-networks {
+    margin-top: 9rem !important;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -239,8 +245,11 @@ header .header .header__photo figure figcaption img {
     font-size: 1.5rem !important;
     top: 20px !important;
   }
+  header .header__titre {
+    min-width: 26.4rem !important;
+  }
   header .header__titre h1 {
-    font-size: 4rem !important;
+    font-size: 4.3rem !important;
   }
 }
 
