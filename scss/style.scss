@@ -241,7 +241,14 @@ header{
 }
 
 @media screen and (min-width: 1300px){
-    header .header__titre h1{
+    header {
+        .header__photo button{
+        font-size: 1.5rem!important;
+        top:20px!important;
+        }
+        .header__titre h1{
         font-size: 3.5rem!important;
+        }
     }
+    
 }

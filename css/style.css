@@ -231,6 +231,10 @@ header .header .header__photo figure figcaption img {
   }
 }
 @media screen and (min-width: 1300px) {
+  header .header__photo button {
+    font-size: 1.5rem !important;
+    top: 20px !important;
+  }
   header .header__titre h1 {
     font-size: 3.5rem !important;
   }
