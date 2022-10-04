@@ -205,9 +205,9 @@ header{
     }
 }
 
-main{
-    padding-left: 9rem;
-    padding-top:10rem;
+.blocks{
+    padding-left: 7rem;
+    padding-top:25rem;
     background-color: $background-color;
 }
 
@@ -238,6 +238,9 @@ main{
                 height: 45.7rem;
             }
         }
+    }
+    .blocks{
+        display: flex;
     }
 }
 

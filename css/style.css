@@ -214,9 +214,9 @@ header .header .header__painting figure figcaption img {
   height: auto;
 }
 
-main {
-  padding-left: 9rem;
-  padding-top: 10rem;
+.blocks {
+  padding-left: 7rem;
+  padding-top: 25rem;
   background-color: #434B9C;
 }
 
@@ -245,6 +245,10 @@ main {
   }
   header .header .header__painting figure .header__painting--photo {
     height: 45.7rem;
+  }
+
+  .blocks {
+    display: flex;
   }
 }
 @media screen and (min-width: 1300px) {
