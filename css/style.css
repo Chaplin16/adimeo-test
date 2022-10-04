@@ -126,6 +126,9 @@ header .header .header__titre span {
   background-color: #f1f1f1;
   color: #434B9C;
 }
+header .header .header__titre .header__titre--calendar {
+  font-family: "Museo sans 300";
+}
 header .header .header__titre .header__titre--calendar i {
   position: relative;
   border: solid 1px #BAABEB;
@@ -145,7 +148,7 @@ header .header .header__titre button {
   background-color: #434B9C;
   border: solid 1px #f1f1f1;
   margin-top: 30px;
-  padding: 17px 25px;
+  padding: 17px 40px;
   color: #f1f1f1;
   font-family: "Museo sans 300";
 }

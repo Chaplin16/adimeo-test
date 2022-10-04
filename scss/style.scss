@@ -131,26 +131,29 @@ header{
                 background-color: $white;
                 color: $background-color;
             }
-            .header__titre--calendar i{
-                position: relative;
-                border: solid 1px $purple;
-                padding:10px;
-                border-radius: 50%;
-                background-color: $purple;
-                margin-right: 10px;
-                &::after{
-                    content:"31";
-                    position: absolute; 
-                    font-size: 10px;;
-                    left:14px;
-                    top:17px;
+            .header__titre--calendar {
+                font-family: 'Museo sans 300';
+                i{
+                    position: relative;
+                    border: solid 1px $purple;
+                    padding:10px;
+                    border-radius: 50%;
+                    background-color: $purple;
+                    margin-right: 10px;
+                    &::after{
+                        content:"31";
+                        position: absolute; 
+                        font-size: 10px;;
+                        left:14px;
+                        top:17px;
+                    }
                 }  
             }
             button{
                 background-color: $background-color;
                 border: solid 1px $white;
                 margin-top: 30px;
-                padding:17px 25px;
+                padding:17px 40px;
                 color: $white;
                 font-family: 'Museo sans 300';
             }
