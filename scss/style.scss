@@ -1,4 +1,5 @@
 @import 'color';
+@import 'mixin';
 
 *,
 body,
@@ -27,12 +28,12 @@ header{
         width: 4.7rem;
         height:55rem;
         padding-bottom: 2rem;
-        background-color: $white;
+        background-color: white;
         &__logo{
-            box-shadow: 1px 1px 3px rgba(57, 58, 68, 0.6);        
+            @include shadow;        
         }
         &__hamburger{
-            box-shadow: 0.8px 1px 3px rgba(57, 58, 68, 0.6)!important;
+            @include shadow;
             background-color: $background-color;
             height: 5rem;
             width: 4.7rem;
@@ -41,7 +42,6 @@ header{
             border-bottom: none;
             border-right: none;
             border-left: none;
-            box-shadow: 0px 1px 3px rgba(57, 58, 68, 0.1);
             &-l1,
             &-l2, 
             &-l3{
@@ -49,8 +49,8 @@ header{
                 display: block;
                 position: absolute;
                 width: 1.4rem;
-                border: solid 2px $white;
-                background-color: $white;
+                border: solid 2px white;
+                background-color: white;
                 border-radius: 4px;
                 left: 1.8rem;
             }
@@ -77,21 +77,11 @@ header{
                     position: relative;
                     color: $background-color;
                     &::after{
-                        content:"";
-                        display: inline-block;
-                        position: absolute;
-                        width: 1.1rem;
-                        border-bottom: solid 2px rgba(67, 75, 156, 0.678);
-                        left:0;
+                        @include pseudoElement;
                         bottom: -10px;
                     }
                     &::before{
-                        content:"";
-                        display: inline-block;
-                        position: absolute;
-                        width: 1.1rem;
-                        border-bottom: solid 2px rgba(67, 74, 156, 0.678);
-                        left:0;
+                        @include pseudoElement;
                         top:185px;
                     }
             }
@@ -100,12 +90,7 @@ header{
                 color: $background-color; 
                 font-size: 1.3rem;
                 &::after{
-                    content:"";
-                    display: inline-block;
-                    position: absolute;
-                    width: 1.1rem;
-                    border-bottom: solid 2px rgba(67, 74, 156, 0.678);
-                    left: 0;
+                    @include pseudoElement;
                     top: 3.5rem;
                 }     
             }
@@ -120,7 +105,7 @@ header{
         .header__titre{
             margin-left: 8rem;
             padding-top: 2rem;
-            color: $white;
+            color: white;
             h1{
                 font-size: 2rem;
                 font-family: 'Museo 900';
@@ -132,7 +117,7 @@ header{
                 border: solid 1px white;
                 padding:4px 12px;
                 border-radius:5px;
-                background-color: $white;
+                background-color: white;
                 color: $background-color;
             }
             .header__titre--calendar {
@@ -156,10 +141,10 @@ header{
             }
             button{
                 background-color: $background-color;
-                border: solid 1px $white;
+                border: solid 1px white;
                 margin-top: 30px;
-                padding:17px 40px;
-                color: $white;
+                @include paddingButton;
+                color: white;
                 font-family: 'Museo sans 300';
             }
             .header__titre--social-networks{
@@ -173,17 +158,17 @@ header{
                 }
             }
         }
-        .header__photo{
+        .header__painting{
             margin-left:80px;
             button{
                 position: absolute;
                 z-index: 10;
-                right: 45px;
-                top:30px;
+                right: 1rem;
+                top: 1.1rem;
                 background-color: $background-color;
-                color: $white;
+                color: white;
                 font-size:0.7rem;
-                padding: 13px 20px; 
+                @include paddingButton;
                 border:none;
                 &:hover{
                     background-color: $purple;
@@ -193,10 +178,9 @@ header{
             figure{
                 display: flex;
                 flex-flow: column;
-                align-items: baseline;
                 position: relative;
                 margin-left:1.05rem;
-                .header__photo--painting{
+                .header__painting--photo{
                     height: 750px;
                     object-fit: cover;  
                 }
@@ -243,10 +227,10 @@ header{
             margin-bottom:1.5rem;
         }
         .header__titre--social-networks{
-            margin-top: 9rem!important;
+            margin-top: 8rem!important;
         }
-        .header__photo figure{
-            .header__photo--painting{
+        .header__painting figure{
+            .header__painting--photo{
                 height: 45.7rem;
             }
         }
@@ -255,10 +239,6 @@ header{
 
 @media screen and (min-width: 1300px){
     header {
-        .header__photo button{
-        font-size: 1.5rem!important;
-        top:20px!important;
-        }
         .header__titre{
             min-width: 26.4rem!important;
             h1{
@@ -267,4 +247,15 @@ header{
         } 
     }
     
+}
+
+
+@media screen and (min-width: 1600px){
+    header {
+        .header__painting button{
+        font-size: 1rem!important;
+        top: 1.5rem!important;
+        right: 18%!important;
+        }
+    }
 }

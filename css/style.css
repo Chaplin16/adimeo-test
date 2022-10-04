@@ -27,10 +27,10 @@ header .sidebar {
   width: 4.7rem;
   height: 55rem;
   padding-bottom: 2rem;
-  background-color: #fff;
+  background-color: white;
 }
 header .sidebar__logo {
-  box-shadow: 1px 1px 3px rgba(57, 58, 68, 0.6);
+  box-shadow: 0.8px 1px 3px rgba(57, 58, 68, 0.6) !important;
 }
 header .sidebar__hamburger {
   box-shadow: 0.8px 1px 3px rgba(57, 58, 68, 0.6) !important;
@@ -42,15 +42,14 @@ header .sidebar__hamburger {
   border-bottom: none;
   border-right: none;
   border-left: none;
-  box-shadow: 0px 1px 3px rgba(57, 58, 68, 0.1);
 }
 header .sidebar__hamburger-l1, header .sidebar__hamburger-l2, header .sidebar__hamburger-l3 {
   content: "";
   display: block;
   position: absolute;
   width: 1.4rem;
-  border: solid 2px #fff;
-  background-color: #fff;
+  border: solid 2px white;
+  background-color: white;
   border-radius: 4px;
   left: 1.8rem;
 }
@@ -82,7 +81,7 @@ header .sidebar__icone--link::after {
   display: inline-block;
   position: absolute;
   width: 1.1rem;
-  border-bottom: solid 2px rgba(67, 75, 156, 0.678);
+  border-bottom: solid 2px rgba(67, 74, 156, 0.678);
   left: 0;
   bottom: -10px;
 }
@@ -117,7 +116,7 @@ header .header {
 header .header .header__titre {
   margin-left: 8rem;
   padding-top: 2rem;
-  color: #fff;
+  color: white;
 }
 header .header .header__titre h1 {
   font-size: 2rem;
@@ -130,7 +129,7 @@ header .header .header__titre span {
   border: solid 1px white;
   padding: 4px 12px;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: white;
   color: #434B9C;
 }
 header .header .header__titre .header__titre--calendar {
@@ -154,10 +153,10 @@ header .header .header__titre .header__titre--calendar i::after {
 }
 header .header .header__titre button {
   background-color: #434B9C;
-  border: solid 1px #fff;
+  border: solid 1px white;
   margin-top: 30px;
-  padding: 17px 40px;
-  color: #fff;
+  padding: 1.1rem 1.7rem;
+  color: white;
   font-family: "Museo sans 300";
 }
 header .header .header__titre .header__titre--social-networks {
@@ -170,36 +169,35 @@ header .header .header__titre .header__titre--social-networks {
 header .header .header__titre .header__titre--social-networks i {
   font-size: 1.6rem;
 }
-header .header .header__photo {
+header .header .header__painting {
   margin-left: 80px;
 }
-header .header .header__photo button {
+header .header .header__painting button {
   position: absolute;
   z-index: 10;
-  right: 45px;
-  top: 30px;
+  right: 1rem;
+  top: 1.1rem;
   background-color: #434B9C;
-  color: #fff;
+  color: white;
   font-size: 0.7rem;
-  padding: 13px 20px;
+  padding: 1.1rem 1.7rem;
   border: none;
 }
-header .header .header__photo button:hover {
+header .header .header__painting button:hover {
   background-color: #BAABEB;
   transition: all 300ms;
 }
-header .header .header__photo figure {
+header .header .header__painting figure {
   display: flex;
   flex-flow: column;
-  align-items: baseline;
   position: relative;
   margin-left: 1.05rem;
 }
-header .header .header__photo figure .header__photo--painting {
+header .header .header__painting figure .header__painting--photo {
   height: 750px;
   object-fit: cover;
 }
-header .header .header__photo figure figcaption {
+header .header .header__painting figure figcaption {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,7 +210,7 @@ header .header .header__photo figure figcaption {
   margin-left: 0rem;
   background-color: rgba(241, 241, 241, 0.6901960784);
 }
-header .header .header__photo figure figcaption img {
+header .header .header__painting figure figcaption img {
   width: 70px;
   height: auto;
 }
@@ -238,22 +236,25 @@ header .header .header__photo figure figcaption img {
     margin-bottom: 1.5rem;
   }
   header .header .header__titre--social-networks {
-    margin-top: 9rem !important;
+    margin-top: 8rem !important;
   }
-  header .header .header__photo figure .header__photo--painting {
+  header .header .header__painting figure .header__painting--photo {
     height: 45.7rem;
   }
 }
 @media screen and (min-width: 1300px) {
-  header .header__photo button {
-    font-size: 1.5rem !important;
-    top: 20px !important;
-  }
   header .header__titre {
     min-width: 26.4rem !important;
   }
   header .header__titre h1 {
     font-size: 4.3rem !important;
+  }
+}
+@media screen and (min-width: 1600px) {
+  header .header__painting button {
+    font-size: 1rem !important;
+    top: 1.5rem !important;
+    right: 18% !important;
   }
 }
 
