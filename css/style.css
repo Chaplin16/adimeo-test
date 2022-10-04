@@ -118,7 +118,6 @@ header .header .header__titre {
   margin-left: 8rem;
   padding-top: 2rem;
   color: #fff;
-  min-width: 20rem;
 }
 header .header .header__titre h1 {
   font-size: 2rem;
@@ -192,27 +191,29 @@ header .header .header__photo button:hover {
 header .header .header__photo figure {
   display: flex;
   flex-flow: column;
+  align-items: baseline;
   position: relative;
   margin-left: 1.05rem;
 }
-header .header .header__photo figure img {
-  max-height: 650px;
+header .header .header__photo figure .header__photo--painting {
+  height: 750px;
   object-fit: cover;
 }
 header .header .header__photo figure figcaption {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 15px;
-  font-size: 15px;
+  column-gap: 0.8rem;
+  font-size: 13px;
   color: #434B9C;
-  padding: 1rem;
-  margin: -3.9rem;
+  padding: 1.2rem;
+  padding-bottom: 10px;
+  margin: -4rem;
   margin-left: 0rem;
   background-color: rgba(241, 241, 241, 0.6901960784);
 }
 header .header .header__photo figure figcaption img {
-  width: 50px;
+  width: 70px;
   height: auto;
 }
 
@@ -238,6 +239,9 @@ header .header .header__photo figure figcaption img {
   }
   header .header .header__titre--social-networks {
     margin-top: 9rem !important;
+  }
+  header .header .header__photo figure .header__photo--painting {
+    height: 45.7rem;
   }
 }
 @media screen and (min-width: 1300px) {
