@@ -113,9 +113,10 @@ header .header .header__titre {
   margin-left: 8rem;
   padding-top: 8.7rem;
   color: #f1f1f1;
+  min-width: 300px;
 }
 header .header .header__titre h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: "Museo 900";
   text-transform: uppercase;
   margin: 30px auto;
@@ -159,9 +160,69 @@ header .header .header__titre .header__titre--social-networks {
   display: flex;
   align-items: center;
   column-gap: 1.5rem;
+  margin-bottom: 1rem;
 }
 header .header .header__titre .header__titre--social-networks i {
   font-size: 1.6rem;
+}
+header .header .header__photo {
+  margin-left: 80px;
+}
+header .header .header__photo button {
+  position: absolute;
+  z-index: 10;
+  right: 45px;
+  top: 30px;
+  background-color: #434B9C;
+  color: #f1f1f1;
+  font-size: 0.7rem;
+  padding: 13px 20px;
+  border: none;
+}
+header .header .header__photo button:hover {
+  background-color: #BAABEB;
+  transition: all 300ms;
+}
+header .header .header__photo figure {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+}
+header .header .header__photo figure img {
+  height: 750px;
+  object-fit: cover;
+}
+header .header .header__photo figure figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  font-size: 15px;
+  color: #434B9C;
+  padding: 1rem;
+  margin: -3.9rem;
+  margin-left: 0rem;
+  background-color: rgba(241, 241, 241, 0.6901960784);
+}
+header .header .header__photo figure figcaption img {
+  width: 50px;
+  height: auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .header {
+    flex-direction: row !important;
+    height: 650px;
+  }
+  .header__titre h1 {
+    position: absolute;
+    z-index: 10;
+    font-size: 3rem !important;
+  }
+  .header .header__titre--calendar {
+    min-width: 600px !important;
+    margin-top: 12rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
