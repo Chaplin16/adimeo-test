@@ -11,6 +11,11 @@ html {
   font-family: "Museo Sans 500";
 }
 
+body {
+  max-width: 1717px;
+  margin: auto;
+}
+
 header {
   background-color: #434B9C;
   height: 750px;
@@ -18,7 +23,7 @@ header {
 header .sidebar {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   height: 1800px;
   width: 80px;
   padding-bottom: 2rem;
@@ -114,6 +119,7 @@ header .header .header__titre {
   padding-top: 8.7rem;
   color: #f1f1f1;
   min-width: 300px;
+  max-width: 600px;
 }
 header .header .header__titre h1 {
   font-size: 2rem;
@@ -220,7 +226,7 @@ header .header .header__photo figure figcaption img {
     font-size: 3rem !important;
   }
   .header .header__titre--calendar {
-    min-width: 600px !important;
+    min-width: 500px !important;
     margin-top: 12rem;
   }
 }

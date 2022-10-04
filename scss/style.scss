@@ -10,9 +10,12 @@ html{
     max-width:100%; 
     scroll-behavior: smooth;
     font-size: 20px;
-    font-family: "Museo Sans 500";
+    font-family: "Museo Sans 500";  
 }
-
+body{
+    max-width:1717px;
+    margin:auto;
+}
 header{
     background-color: $background-color;
     height: 750px;
@@ -20,7 +23,7 @@ header{
     .sidebar{
         display: flex;
         flex-direction: column;
-        position: absolute; 
+        position: fixed; 
         height: 1800px;
         width: 80px;
         padding-bottom: 2rem;;
@@ -120,6 +123,7 @@ header{
             padding-top: 8.7rem;
             color: $white;
             min-width: 300px;
+            max-width: 600px;
             h1{
                 font-size: 2rem;
                 font-family: 'Museo 900';
@@ -230,7 +234,7 @@ header{
             font-size: 3rem!important;
         }
         .header__titre--calendar{
-            min-width: 600px!important;
+            min-width: 500px!important;
             margin-top: 12rem;
         }
     }
