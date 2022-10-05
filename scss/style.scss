@@ -325,7 +325,7 @@ header{
     }
     &__icone-play{
         position: absolute;
-        top:30%;
+        top:37%;
         left:57%;
         z-index:10;
         width: 40px;
@@ -336,9 +336,16 @@ header{
         color: white;
         border: solid 1px white;
         padding-top: 8px;
-
- 
-
+    }
+    &__image--title{
+        position: absolute;
+        top: 230px;
+        right: 150px;
+        text-align: left;
+        color: #fff;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        font-family: "Museo 900";
     }
 }
 
