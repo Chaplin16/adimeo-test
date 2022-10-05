@@ -207,10 +207,10 @@ header{
 
 // main
 .block{
-    padding-left: 7rem;
-    padding-top:30rem;
-    background-color: $background-color;
     &__left{
+        padding-left: 7rem;
+        padding-top:30rem;
+        background-color: $background-color;
         & p:nth-of-type(1){
             padding: 2rem 0;
             font-size: 1.9rem;
@@ -273,7 +273,31 @@ header{
             }
 
         }
-
+    }
+    &__right{
+        background-color: white;
+        padding-left: 6rem;
+        padding-top:2rem;
+        display: flex;
+        flex-direction: column;
+        column-gap: 2rem;
+        align-items: center;
+        & figure{        
+            padding:1rem;       
+            & figcaption {
+                color: #BCBCBC;
+                font-size: 0.55rem;  
+                max-width:480px;  
+                padding-top:5px;              
+            }
+        }
+        .block__right--button-virtual-visit{
+            background-color: transparent;
+            border-color: $background-color;
+            color: $background-color;
+            padding: 4px 7px;;
+        }
+        
     }
 }
 
@@ -311,7 +335,11 @@ header{
     }
     main .block{
         display: flex;
-        padding-top: 10rem;
+        padding-top:10.5rem;
+        &__left{
+            padding-top:0rem;
+        }
+        
     }
 }
 

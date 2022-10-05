@@ -156,7 +156,7 @@ header .header .header__titre button {
   background-color: #434B9C;
   border: solid 1px white;
   margin-top: 1.3rem;
-  padding: 1.1rem 1.7rem;
+  padding: 0.9rem 1.3rem;
   color: white;
   font-family: "Museo sans 300";
 }
@@ -181,7 +181,7 @@ header .header .header__painting button {
   background-color: #434B9C;
   color: white;
   font-size: 0.7rem;
-  padding: 1.1rem 1.7rem;
+  padding: 0.9rem 1.3rem;
   border: none;
 }
 header .header .header__painting button:hover {
@@ -214,7 +214,7 @@ header .header .header__painting figure figcaption img {
   height: auto;
 }
 
-.block {
+.block__left {
   padding-left: 7rem;
   padding-top: 30rem;
   background-color: #434B9C;
@@ -280,6 +280,30 @@ header .header .header__painting figure figcaption img {
   font-size: 0.75rem;
   padding-left: 5px;
 }
+.block__right {
+  background-color: white;
+  padding-left: 6rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  column-gap: 2rem;
+  align-items: center;
+}
+.block__right figure {
+  padding: 1rem;
+}
+.block__right figure figcaption {
+  color: #BCBCBC;
+  font-size: 0.55rem;
+  max-width: 480px;
+  padding-top: 5px;
+}
+.block__right .block__right--button-virtual-visit {
+  background-color: transparent;
+  border-color: #434B9C;
+  color: #434B9C;
+  padding: 4px 7px;
+}
 
 @media screen and (min-width: 1100px) {
   header .header {
@@ -310,7 +334,10 @@ header .header .header__painting figure figcaption img {
 
   main .block {
     display: flex;
-    padding-top: 10rem;
+    padding-top: 10.5rem;
+  }
+  main .block__left {
+    padding-top: 0rem;
   }
 }
 @media screen and (min-width: 1300px) {
