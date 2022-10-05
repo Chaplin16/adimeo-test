@@ -317,19 +317,19 @@ header .header .header__painting figure figcaption img {
     position: absolute;
     top: 11rem;
     z-index: 10;
-    font-size: 3rem !important;
+    font-size: 2.6rem !important;
   }
   header .header .header__titre {
     margin-top: 8.25rem;
-    min-width: 17rem;
-    height: 37.5rem !important;
+    min-width: 14.2rem;
+    height: 768px !important;
   }
   header .header .header__titre--calendar {
     min-width: 500px !important;
     margin-top: 12.5rem;
   }
   header .header .header__titre--social-networks {
-    margin-top: 5rem !important;
+    margin-top: 9rem !important;
   }
   header .header .header__painting figure .header__painting--photo {
     height: 42rem;
