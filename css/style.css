@@ -246,12 +246,39 @@ header .header .header__painting figure figcaption img {
   font-family: "Museo Sans 700";
 }
 .block__left--button-tarif i {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   padding-left: 5px;
 }
 .block__left h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 2rem 0;
+  font-family: "Museo 900";
+}
+.block__left--text-one {
+  color: #BAABEB;
+  font-size: 0.9rem;
+  padding: 0 2rem 1rem 0;
+}
+.block__left--text-two, .block__left--text-three {
+  font-family: "Museo Sans 300";
+  font-size: 20px;
+  padding-right: 2rem;
+}
+.block__left--text-two span, .block__left--text-three span {
+  font-family: "Museo Sans 700";
+}
+.block__left--text-three {
+  display: none;
+}
+.block__left--button-see-more {
+  background-color: transparent;
+  padding: 1.8rem 0;
+  font-size: 0.9rem;
+  border: none;
+}
+.block__left--button-see-more i {
+  font-size: 0.75rem;
+  padding-left: 5px;
 }
 
 @media screen and (min-width: 1100px) {
@@ -281,7 +308,7 @@ header .header .header__painting figure figcaption img {
     height: 45.7rem;
   }
 
-  main .blocks {
+  main .block {
     display: flex;
     padding-top: 10rem;
   }

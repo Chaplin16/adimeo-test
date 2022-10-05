@@ -237,14 +237,43 @@ header{
             padding-bottom: 0.3rem;
             font-family: "Museo Sans 700";
             & i{
-                font-size: 0.7rem;
-                padding-left: 5px;
+                @include chevron;
             }
         }
         h2{
-            font-size: 2rem;
+            font-size: 1.8rem;
             padding: 2rem 0;
+            font-family: "Museo 900";
         }
+        &--text-one{
+            color: #BAABEB;
+            font-size: 0.9rem;
+            padding: 0 2rem 1rem 0;
+
+        }
+        &--text-two,
+        &--text-three{
+            font-family: "Museo Sans 300";
+            font-size: 20px;
+            padding-right: 2rem;
+            span{
+                font-family:"Museo Sans 700";
+            }
+        }
+        &--text-three{
+            display: none;
+        }
+        &--button-see-more{
+            background-color: transparent;
+            padding: 1.8rem 0;
+            font-size:0.9rem;
+            border: none;
+            & i {
+                @include chevron;
+            }
+
+        }
+
     }
 }
 
@@ -280,7 +309,7 @@ header{
             }
         }
     }
-    main .blocks{
+    main .block{
         display: flex;
         padding-top: 10rem;
     }

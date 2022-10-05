@@ -14,3 +14,8 @@
 @mixin paddingButton{
     padding: 1.1rem 1.7rem;
 }
+
+@mixin chevron{
+    font-size: 0.75rem;
+    padding-left: 5px;
+}
