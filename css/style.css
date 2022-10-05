@@ -283,14 +283,17 @@ header .header .header__painting figure figcaption img {
 .block__right {
   background-color: white;
   padding-left: 6rem;
-  padding-top: 2rem;
   display: flex;
   flex-direction: column;
-  column-gap: 2rem;
   align-items: center;
+  margin: 2rem auto;
 }
 .block__right figure {
   padding: 1rem;
+}
+.block__right figure img {
+  min-width: 300px;
+  height: auto;
 }
 .block__right figure figcaption {
   color: #BCBCBC;
@@ -339,6 +342,14 @@ header .header .header__painting figure figcaption img {
   main .block__left {
     padding-top: 0rem;
   }
+  main .block__right {
+    padding-left: 0;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1300px) {
+  main .block__left {
+    max-width: 720px;
+  }
 }
 @media screen and (min-width: 1300px) {
   header .header__titre {
@@ -346,6 +357,10 @@ header .header .header__painting figure figcaption img {
   }
   header .header__titre h1 {
     font-size: 4.3rem !important;
+  }
+
+  main .block__left {
+    max-width: 860px !important;
   }
 }
 @media screen and (min-width: 1600px) {
