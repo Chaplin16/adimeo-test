@@ -14,6 +14,10 @@ html{
     font-family: "Museo Sans 500";
     color: white;  
 }
+
+p{
+    line-height: 32px;
+}
 body{
     max-width:1717px;
     margin:auto;
@@ -159,7 +163,7 @@ header{
             }
         }
         .header__painting{
-            margin-left:80px;
+            margin-left:70px;
             position: relative;
             button{
                 position: absolute;
@@ -179,7 +183,6 @@ header{
             figure{
                 display: flex;
                 flex-flow: column;
-                margin-left:1.05rem;
                 .header__painting--photo{
                     height: 768px;
                     object-fit: cover;  
@@ -191,8 +194,8 @@ header{
                     column-gap: 0.8rem;
                     font-size: 13px;
                     color: $background-color;
-                    padding:0.8rem;
-                    margin:-3.8rem;
+                    padding:0.7rem;
+                    margin:-3.7rem;
                     margin-left: 0rem;
                     background-color: $grey;
                     img{
@@ -208,25 +211,29 @@ header{
 // main
 .block{
     &__left{
-        padding-left: 7rem;
-        padding-top:30rem;
+        padding-left: 5rem;
+        padding-top:28rem;
         background-color: $background-color;
-        & p:nth-of-type(1){
-            padding: 2rem 0;
+        & p:nth-of-type(1){  //€tarif
+            padding: 2rem 0 1.5rem 0;
             font-size: 1.9rem;
             font-family:"Museo 700";
+            & i{
+                font-size: 1.7rem;
+                padding-right: 10px;
+            }
         }
-        & p:nth-of-type(2){
+        & p:nth-of-type(2){ // plein tarif
             font-family: "Museo Sans 300";
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             span{
                 font-family: "Museo Sans 700";
                 font-size: 1.1rem;
             }
         }
-        & p:nth-of-type(3){
+        & p:nth-of-type(3){ //application sous condition
             color: $grey;
-            padding: 1rem 0;
+            padding: 0.6rem 0 1.5rem 0;
             font-size:0.72rem;
         }
         &--button-tarif{
@@ -242,7 +249,7 @@ header{
         }
         h2{
             font-size: 1.8rem;
-            padding: 2rem 0;
+            padding: 3rem 0 1.5rem 0;
             font-family: "Museo 900";
         }
         &--text-one{
@@ -276,22 +283,27 @@ header{
     }
     &__right{
         background-color: white;
-        padding-left: 6rem;
+        padding-left: 4rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 2rem  auto;
+        flex:auto;
         & figure{        
             padding:1rem;  
-            & img{
-                min-width:300px;
-                height: auto;
-            }     
+            padding-top:2.5rem;
+            display: flex;
+            flex-direction: column;
+            & .block__right--first-paint,
+            & .block__right--second-paint{
+                min-width: 200px;
+            } 
+              
             & figcaption {
                 color: #BCBCBC;
                 font-size: 0.55rem;  
-                max-width:480px;  
-                padding-top:5px;              
+                padding-top: 7px;    
+
+
             }
         }
         .block__right--button-virtual-visit{
@@ -317,8 +329,7 @@ header{
         }
         .header__titre{
             margin-top: 4.8rem;
-            min-width:14.2rem;
-            height: 768px!important;
+            max-width: 15.7rem;
         }
         .header__titre--calendar{
             min-width: 500px!important;
@@ -328,20 +339,24 @@ header{
         .header__titre--social-networks{
             margin-top: 7rem!important;
         }
-        .header__painting figure{
-            .header__painting--photo{
-                height: 768px;
-            }
-        }
+     
     }
     main .block{
         display: flex;
-        padding-top:7rem;
         &__left{
             padding-top:0rem; 
+            padding-left: 6rem;
         }
         &__right{
             padding-left: 0;
+            &--first-paint{
+                max-width: 458px;
+                max-height: 349px;
+            }
+            &--second-paint{
+                max-width: 519px;
+                max-height: 395px;
+            }
         }
         
     }
@@ -349,7 +364,7 @@ header{
 
 @media (min-width: 1100px) and (max-width: 1300px){
     main .block__left{
-        max-width: 590px;
+        width: 58.7vh!important;
     }
 }
 
@@ -368,7 +383,8 @@ header{
         }
     }
     main .block__left{
-        max-width: 860px!important;;
+        max-width: 30.85rem!important;
+        height: auto;
     }
     
 }
