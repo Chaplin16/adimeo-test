@@ -19,7 +19,7 @@ p{
     line-height: 32px;
 }
 body{
-    max-width:1717px;
+    max-width:1685px;
     margin:auto;
 }
 header{
@@ -85,7 +85,7 @@ header{
                     }
                     &::before{
                         @include pseudoElement;
-                        top:165px;
+                        top:160px;
                     }
             }
             & i{
@@ -272,7 +272,7 @@ header{
         }
         &--button-see-more{
             background-color: transparent;
-            padding: 1.8rem 0;
+            padding: 1.5rem 0 5rem 0;
             font-size:0.9rem;
             border: none;
             & i {
@@ -288,35 +288,59 @@ header{
         flex-direction: column;
         align-items: center;
         flex:auto;
+        row-gap:1rem;
         & figure{        
             padding:1rem;  
-            padding-top:2.5rem;
+            padding-top:2.3rem;
             display: flex;
             flex-direction: column;
             & .block__right--first-paint,
             & .block__right--second-paint{
                 min-width: 200px;
-            } 
-              
+            }             
             & figcaption {
                 color: #BCBCBC;
                 font-size: 0.55rem;  
                 padding-top: 7px;    
-
-
             }
         }
         .block__right--button-virtual-visit{
             background-color: transparent;
             border-color: $background-color;
             color: $background-color;
-            padding: 4px 7px;;
+            @include paddingButton;
         }
         
     }
 }
 
+.video{
+    text-align:center;
+    padding-left: 5rem;
+    position: relative; 
+    &__image{
+        width:85%;
+        padding-top:5rem;
+        z-index:2;  
+    }
+    &__icone-play{
+        position: absolute;
+        top:30%;
+        left:57%;
+        z-index:10;
+        width: 40px;
+        height:40px;
+        font-size:  18px;
+        border-radius: 50px;
+        text-align: center;
+        color: white;
+        border: solid 1px white;
+        padding-top: 8px;
 
+ 
+
+    }
+}
 
 @media screen and (min-width: 1100px){
     header .header{
@@ -371,7 +395,7 @@ header{
 @media screen and (min-width: 1300px){
     header {
         .header__titre{
-            min-width: 22.2rem!important;
+            min-width: 23.78rem!important;
             h1{
                 font-size: 3.7rem!important;
             }
@@ -383,18 +407,9 @@ header{
         }
     }
     main .block__left{
-        max-width: 30.85rem!important;
+        max-width: 32.45rem!important;
         height: auto;
     }
     
 }
 
-@media screen and (min-width: 1600px){
-    header {
-        .header__painting button{
-        font-size: 1rem!important;
-        top: 1.5rem!important;
-        right: 18%!important;
-        }
-    }
-}
