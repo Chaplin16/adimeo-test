@@ -27,9 +27,10 @@ header{
         flex-direction: column;
         position: fixed; 
         width: 4.7rem;
-        height:55rem;
+        height:50rem;
         padding-bottom: 2rem;
         background-color: white;
+        border-left: solid 1px $grey;
         &__logo{
             @include shadow;        
         }
@@ -39,10 +40,8 @@ header{
             height: 5rem;
             width: 4.7rem;
             cursor: pointer;
-            border-top: solid 2px #f1f1f1b0;
-            border-bottom: none;
-            border-right: none;
-            border-left: none;
+            border: none;
+            border-top: solid 2px $grey;
             &-l1,
             &-l2, 
             &-l3{
@@ -69,7 +68,7 @@ header{
             display: flex;
             flex-direction: column;
             align-items: center;
-            row-gap: 5rem;
+            row-gap: 3.7rem;
             &--link{
                     padding-top: 2rem;
                     padding-bottom: 1.5rem;
@@ -79,11 +78,11 @@ header{
                     color: $background-color;
                     &::after{
                         @include pseudoElement;
-                        bottom: -10px;
+                        bottom: -5px;
                     }
                     &::before{
                         @include pseudoElement;
-                        top:185px;
+                        top:165px;
                     }
             }
             & i{
@@ -92,7 +91,7 @@ header{
                 font-size: 1.3rem;
                 &::after{
                     @include pseudoElement;
-                    top: 3.5rem;
+                    top: 3.1rem;
                 }     
             }
         }
@@ -123,6 +122,7 @@ header{
             }
             .header__titre--calendar {
                 font-family: 'Museo sans 300';
+                font-size:0.8rem;
                 i{
                     position: relative;
                     border: solid 1px $purple;
@@ -143,7 +143,7 @@ header{
             button{
                 background-color: $background-color;
                 border: solid 1px white;
-                margin-top: 1.3rem;;
+                margin-top: 1.4rem;;
                 @include paddingButton;
                 color: white;
                 font-family: 'Museo sans 300';
@@ -161,6 +161,7 @@ header{
         }
         .header__painting{
             margin-left:80px;
+            position: relative;
             button{
                 position: absolute;
                 z-index: 10;
@@ -194,7 +195,7 @@ header{
                     padding:0.9rem;
                     margin:-4rem;
                     margin-left: 0rem;
-                    background-color: #f1f1f1b0;
+                    background-color: $grey;
                     img{
                         width:3rem;
                         height: auto;  
@@ -225,7 +226,7 @@ header{
             }
         }
         & p:nth-of-type(3){
-            color: #f1f1f1b0;
+            color: $grey;
             padding: 1rem 0;
             font-size:0.72rem;
         }
@@ -313,24 +314,23 @@ header{
             position: absolute;
             top: 11rem;
             z-index: 10;
-            font-size: 3.4rem!important;
+            font-size: 3rem!important;
         }
         .header__titre{
             margin-top: 8.25rem;
-            min-width:20rem;
+            min-width:17rem;
             height: 37.5rem!important;
         }
         .header__titre--calendar{
             min-width: 500px!important;
-            margin-top: 15rem;
-            margin-bottom:1.5rem;
+            margin-top: 12.5rem;
         }
         .header__titre--social-networks{
-            margin-top: 8rem!important;
+            margin-top: 5rem!important;
         }
         .header__painting figure{
             .header__painting--photo{
-                height: 45.7rem;
+                height: 42rem;
             }
         }
     }
@@ -356,9 +356,9 @@ header{
 @media screen and (min-width: 1300px){
     header {
         .header__titre{
-            min-width: 26.4rem!important;
+            min-width: 22.2rem!important;
             h1{
-                font-size: 4.3rem!important;
+                font-size: 3.7rem!important;
             }
         } 
     }
