@@ -332,16 +332,12 @@ header .header .header__painting figure figcaption img {
 }
 .video__icone-play {
   position: absolute;
-  top: 40%;
-  left: 50%;
-  z-index: 10;
+  top: 38%;
+  left: 52%;
   width: 10%;
   height: 23%;
-  font-size: 25px;
   border-radius: 50%;
-  padding: 5px 0 0 10px;
-  text-align: center;
-  color: white;
+  padding-top: 2vw;
   border: solid 1px white;
 }
 .video__image--title {
@@ -349,11 +345,9 @@ header .header .header__painting figure figcaption img {
   bottom: 14%;
   left: 26%;
   text-align: left;
-  color: #fff;
   font-size: 0.7rem;
   text-transform: uppercase;
   font-family: "Museo 900";
-  z-index: 10;
 }
 
 footer {
@@ -376,6 +370,12 @@ footer a {
 }
 
 @media screen and (min-width: 800px) {
+  .video__icone-play {
+    top: 32%;
+    left: 50%;
+    padding-top: 3.5vw;
+    font-size: 30px;
+  }
   .video__image--title {
     font-size: 1.5rem;
     left: 23%;
@@ -449,6 +449,11 @@ footer a {
   main .block__left {
     max-width: 32.45rem !important;
     height: auto;
+  }
+
+  .video .video__icone-play {
+    font-size: 40px;
+    left: 48%;
   }
 }
 @media screen and (min-width: 1700px) {

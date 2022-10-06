@@ -328,29 +328,22 @@ header{
     }
     &__icone-play{
         position: absolute;
-        top:40%;
-        left: 50%;
-        z-index:10;
+        top:38%;
+        left: 52%;
         width: 10%;
         height: 23%;
-        font-size: 25px;
         border-radius: 50%;
-        padding: 5px 0 0 10px;
-        text-align: center;
-        color: white;
+        padding-top: 2vw;
         border: solid 1px white;
- 
     }
     &__image--title{
         position: absolute;
         bottom: 14%;
         left: 26%;
         text-align: left;
-        color: #fff;
         font-size: 0.7rem;
         text-transform: uppercase;
         font-family: "Museo 900";
-        z-index: 10;
     }
 }
 
@@ -375,6 +368,12 @@ footer{
 
 @media screen and (min-width: 800px){
     .video{
+        &__icone-play{
+            top: 32%;
+            left: 50%;
+            padding-top: 3.5vw;
+            font-size: 30px;
+        }
         &__image--title{
             font-size:1.5rem;
             left:23%;
@@ -422,7 +421,6 @@ footer{
                 max-height: 395px;
             }
         }
-        
     }
     .video{
         &__image--title{
@@ -456,6 +454,12 @@ footer{
         max-width: 32.45rem!important;
         height: auto;
     }  
+    .video .video{
+        &__icone-play{
+            font-size: 40px;
+            left: 48%;
+        }
+    }
 }
 
 @media screen and (min-width: 1700px){
