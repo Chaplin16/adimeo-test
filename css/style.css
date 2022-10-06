@@ -21,6 +21,10 @@ body {
   margin: auto;
 }
 
+#menu__hamburger {
+  display: none;
+}
+
 .menu__hamburger {
   background-color: #333A84;
 }
@@ -101,7 +105,7 @@ body {
 }
 
 header, main, footer {
-  display: none;
+  display: block;
 }
 
 header {

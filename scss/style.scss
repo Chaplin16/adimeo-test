@@ -24,8 +24,12 @@ body{
     margin:auto;
     
 }
+
+#menu__hamburger{
+    display: none;
+}
+
 .menu__hamburger{
-    // display: none;
     background-color: #333A84;
     & .menu{
         &__logo{
@@ -102,7 +106,7 @@ body{
     } 
 } 
 
-header, main, footer{display: none};
+header, main, footer{display: block};
 
 
 header{

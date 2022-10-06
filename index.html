@@ -15,61 +15,63 @@
     </head>
     
     <body>
-        <section class="menu__hamburger">
-            <div class="menu">
-                <figure>
-                    <img class="menu__logo" src="/images/logo-museum-giverny-impressionismes.png" alt="Logo du musée Giverny, impressionismes">
-                </figure>
-                <div class="menu__container">
-                    <div class="menu__container-link">
-                        <div>
-                            <h3>Le musée</h3>
-                            <a href="/">Organiser ma visite</a>
-                            <a href="/">Collections & Expositions</a>
-                            <a href="/">Le musée</a>
-                        </div>
-                        <div>
-                            <h3>Espace professionnel</h3>
-                            <a href="/">Entreprises</a>
-                            <a href="/">Mécénat</a>
-                            <a href="/">Presse</a>
-                            <a href="/">Tourisme</a>
-                            <a href="/">Location d'espace</a>
-                        </div>
-                        <div>
-                            <h3>Je suis</h3>
-                            <a href="/">Un individuel</a>
-                            <a href="/">Un famille</a>
-                            <a href="/">Un enseignant</a>
-                            <a href="/">Un groupe d'Entreprises</a>
-                            <a href="/">En situation d'handicap</a>
-                            <p>
-                                <i class="fal fa-eye-slash"></i>
-                                <i class="fal fa-wheelchair"></i>
-                                <img src="/images/musee-accessible-aux-handicapes-mentaux.png"
-                                    alt="icone indiquant que le musee est accessibles aux handicapés" />
-                                <i class="fal fa-deaf"></i>
-                            </p>
+        <section id="menu__hamburger">
+            <div class="menu__hamburger">
+                <div class="menu">
+                    <figure>
+                        <img class="menu__logo" src="/images/logo-museum-giverny-impressionismes.png" alt="Logo du musée Giverny, impressionismes">
+                    </figure>
+                    <div class="menu__container">
+                        <div class="menu__container-link">
+                            <div>
+                                <h3>Le musée</h3>
+                                <a href="/">Organiser ma visite</a>
+                                <a href="/">Collections & Expositions</a>
+                                <a href="/">Le musée</a>
+                            </div>
+                            <div>
+                                <h3>Espace professionnel</h3>
+                                <a href="/">Entreprises</a>
+                                <a href="/">Mécénat</a>
+                                <a href="/">Presse</a>
+                                <a href="/">Tourisme</a>
+                                <a href="/">Location d'espace</a>
+                            </div>
+                            <div>
+                                <h3>Je suis</h3>
+                                <a href="/">Un individuel</a>
+                                <a href="/">Un famille</a>
+                                <a href="/">Un enseignant</a>
+                                <a href="/">Un groupe d'Entreprises</a>
+                                <a href="/">En situation d'handicap</a>
+                                <p>
+                                    <i class="fal fa-eye-slash"></i>
+                                    <i class="fal fa-wheelchair"></i>
+                                    <img src="/images/musee-accessible-aux-handicapes-mentaux.png"
+                                        alt="icone indiquant que le musee est accessibles aux handicapés" />
+                                    <i class="fal fa-deaf"></i>
+                                </p>
+                            </div>
                         </div>
                     </div>
+                    <div class="menu__icone-social-networks">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>    
+                <div class="menu__painting" id="container-painting">
+                    <!-- painting with js/displayTable.js -->
                 </div>
-                <div class="menu__icone-social-networks">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                </div>
-             </div>    
-            <div class="menu__painting" id="container-painting">
-                <!-- painting with js/displayTable.js -->
             </div>
         </section>    
 
             <!-- sidebar -->
-        <header>
+        <header id="header">
         <div class="sidebar">
             <img class="sidebar__logo" src="images/Logo-musee-giverny.png" alt="logo musée Giverny" />
             <nav>
-                <button type="button" aria-label="menu de navigation" class="sidebar__hamburger">
+                <button type="button" aria-label="menu de navigation" class="sidebar__hamburger" id="hamburger">
                     <span class="sidebar__hamburger-l1"></span>
                     <span class="sidebar__hamburger-l2"></span>
                     <span class="sidebar__hamburger-l3"></span>
@@ -117,7 +119,7 @@
             </div>
         </div>
         </header>
-        <main>
+        <main id="main">
             <div class="block">
                 <div class="block__left">
                     <p>
@@ -196,7 +198,7 @@
 
 
         </main>
-        <footer>
+        <footer id="footer">
             <div class="footer">
                 <a href="/">Marchés publics</a>
                 <a href="/">FAQ</a>
@@ -208,6 +210,7 @@
             </div>
         </footer>
 
+    <script src="js/displayMenu.js"></script>
     <script src="js/buttonAddMore.js"></script>
     <script src="js/displayTable.js"></script>
 </body>
