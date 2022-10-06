@@ -19,7 +19,7 @@ p{
     line-height: 32px;
 }
 body{
-    max-width:1685px;
+    max-width:1920px;
     margin:auto;
 }
 header{
@@ -416,7 +416,19 @@ header{
     main .block__left{
         max-width: 32.45rem!important;
         height: auto;
-    }
-    
+    }  
 }
 
+@media screen and (min-width: 1700px){
+    header {
+        .header .header__titre{
+            min-width: 32rem!important;
+        }
+        .header__titre h1{
+            font-size: 4.85rem!important;
+        }
+    }
+    main .block__left{
+        max-width: 40.7rem!important;
+    }
+}
