@@ -328,23 +328,23 @@ header{
     }
     &__icone-play{
         position: absolute;
-        top:39%;
-        left: 52%;
+        top:40%;
+        left: 50%;
         z-index:10;
-        width: 1.8rem;
-        height: 1.8rem;
-        font-size: 0.9rem;
+        width: 10%;
+        height: 23%;
+        font-size: 25px;
         border-radius: 50%;
-        padding-left: 3px;
+        padding: 5px 0 0 10px;
         text-align: center;
         color: white;
         border: solid 1px white;
-        padding-top: 8px;
+ 
     }
     &__image--title{
         position: absolute;
-        bottom: 17%;
-        left: 25%;
+        bottom: 14%;
+        left: 26%;
         text-align: left;
         color: #fff;
         font-size: 0.7rem;
@@ -355,22 +355,30 @@ header{
 }
 
 footer{
-    background-color: $background-color;
+    background-color: #22286E;
     padding-left:3rem;
     .footer{
-        min-height: 3rem;
-        z-index:10;
         display: flex;
         justify-content: space-around;
-        align-items: center;
         flex-wrap: wrap;
+        min-height: 3rem;
         row-gap:1rem;
+        align-items: center;
         margin: auto;
         max-width: 83%;
+        padding:1rem 0;
     }
     & a{
 
         font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .video{
+        &__image--title{
+            font-size:1.5rem;
+        }
     }
 }
 
