@@ -32,7 +32,7 @@ header{
         flex-direction: column;
         position: fixed; 
         width: 70px;
-        height:50rem;
+        height:60rem;
         background-color: white;
         border-left: solid 1px $grey;
         z-index:10;
@@ -312,44 +312,44 @@ header{
             border-color: $background-color;
             color: $background-color;
             @include paddingButton;
-            margin-bottom: 10rem;
+            margin-bottom: 2rem;
         }
         
     }
 }
 
 .video{
-    text-align:center;
+     text-align:center;
     position: relative; 
-    margin-top: 4rem;
+    margin-left: 3rem;
+    padding-bottom:2.5rem;
     &__image{
         width:75%;  
-        margin: -10rem 0 2rem 3rem;
     }
     &__icone-play{
         position: absolute;
-        bottom: 5.5rem;
-        left: 11rem;
         width: 10%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-bottom:2.5rem;
     }
     &__image--title{
         position: absolute;
-        top: -3.5rem;
-        left: 26%;
+        bottom: 30%;
+        left: 20%;
         text-align: left;
         font-size: 0.7rem;
         text-transform: uppercase;
         font-family: "Museo 900";
     }
+    &__pattern{
+        position: absolute; 
+        bottom: 0;
+        z-index: -15;
+    }
 }
-.pattern{
-    position: absolute; 
-    bottom: 0;
-    z-index: -15;
 
-
-
-}
 footer{
     background-color: #22286E;
     padding-left:3rem;
@@ -371,15 +371,10 @@ footer{
 
 @media screen and (min-width: 800px){
     .video{
-        &__icone-play{
-            top: 32%;
-            left: 50%;
-            padding-top: 3.5vw;
-            font-size: 30px;
-        }
         &__image--title{
-            font-size:1.5rem;
-            left:23%;
+            font-size:1rem;
+            left:20%;
+            bottom: 25%;
         }
     }
 }
@@ -404,8 +399,7 @@ footer{
         }
         .header__titre--social-networks{
             margin-top: 7rem!important;
-        }
-     
+        }     
     }
     main .block{
         display: flex;
@@ -426,9 +420,9 @@ footer{
         }
     }
     .video{
+        margin-top:5rem;
         &__image--title{
-            font-size:2rem;
-            left:22%;
+            font-size:1.5rem;
         }
     }
 }
@@ -457,12 +451,6 @@ footer{
         max-width: 32.45rem!important;
         height: auto;
     }  
-    .video .video{
-        &__icone-play{
-            font-size: 40px;
-            left: 48%;
-        }
-    }
 }
 
 @media screen and (min-width: 1700px){
@@ -479,9 +467,9 @@ footer{
     }
     .video{
         &__image--title{
-            font-size:3rem;
+            font-size:2.2rem;
             left:21%;
-            bottom: 13%;
+            bottom: 20%;
         }
     }
 }
