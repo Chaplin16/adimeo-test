@@ -329,13 +329,14 @@ header .header .header__painting figure figcaption img {
 }
 .video__icone-play {
   position: absolute;
-  top: 37%;
-  left: 57%;
+  top: 36%;
+  left: 57.5%;
   z-index: 10;
-  width: 40px;
-  height: 40px;
-  font-size: 18px;
-  border-radius: 50px;
+  width: 1.8rem;
+  height: 1.8rem;
+  font-size: 0.9rem;
+  border-radius: 50%;
+  padding-left: 3px;
   text-align: center;
   color: white;
   border: solid 1px white;
@@ -343,8 +344,8 @@ header .header .header__painting figure figcaption img {
 }
 .video__image--title {
   position: absolute;
-  top: 230px;
-  right: 150px;
+  top: 10rem;
+  right: 6rem;
   text-align: left;
   color: #fff;
   font-size: 0.7rem;
@@ -396,7 +397,7 @@ header .header .header__painting figure figcaption img {
 }
 @media (min-width: 1100px) and (max-width: 1300px) {
   main .block__left {
-    width: 58.7vh !important;
+    width: 69.8vh !important;
   }
 }
 @media screen and (min-width: 1300px) {
