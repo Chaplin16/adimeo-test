@@ -321,6 +321,7 @@ header{
     background-image: url("/images/pattern.svg");
     background-size:  70%  100% ;
     margin-top: 3rem;
+    margin-bottom: -6px;
     &__image{
         width:75%;  
         margin-left: 3rem;
@@ -350,6 +351,26 @@ header{
         text-transform: uppercase;
         font-family: "Museo 900";
         z-index: 10;
+    }
+}
+
+footer{
+    background-color: $background-color;
+    padding-left:3rem;
+    .footer{
+        min-height: 3rem;
+        z-index:10;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap:1rem;
+        margin: auto;
+        max-width: 83%;
+    }
+    & a{
+
+        font-size: 0.7rem;
     }
 }
 
