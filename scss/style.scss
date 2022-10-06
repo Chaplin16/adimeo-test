@@ -369,7 +369,6 @@ footer{
         padding:1rem 0;
     }
     & a{
-
         font-size: 0.7rem;
     }
 }
@@ -378,6 +377,7 @@ footer{
     .video{
         &__image--title{
             font-size:1.5rem;
+            left:23%;
         }
     }
 }
@@ -424,6 +424,12 @@ footer{
         }
         
     }
+    .video{
+        &__image--title{
+            font-size:2rem;
+            left:22%;
+        }
+    }
 }
 
 @media (min-width: 1100px) and (max-width: 1300px){
@@ -463,5 +469,12 @@ footer{
     }
     main .block__left{
         max-width: 40.7rem!important;
+    }
+    .video{
+        &__image--title{
+            font-size:3rem;
+            left:21%;
+            bottom: 13%;
+        }
     }
 }
