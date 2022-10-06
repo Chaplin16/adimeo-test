@@ -77,14 +77,15 @@ body {
   left: 27%;
 }
 .menu__hamburger .menu__painting figure h3 {
-  top: 60%;
+  top: 72%;
   max-width: 7rem;
   font-size: 31px;
   text-align: left;
   font-family: "Museo 900";
+  line-height: 1.4rem;
 }
 .menu__hamburger .menu__painting figure figcaption {
-  top: 50%;
+  top: 62.5%;
   font-size: 15px;
   font-family: "Museo 500";
 }
@@ -461,11 +462,15 @@ footer a {
     justify-content: space-between;
     min-height: 100vh;
   }
-  .menu__hamburger .menu__painting {
-    padding: 1.8rem;
+  .menu__hamburger .menu__painting figure {
+    padding: 1rem;
+    padding-top: 3rem;
   }
   .menu__hamburger .menu__painting figure h3, .menu__hamburger .menu__painting figure figcaption {
-    left: 1rem;
+    left: 2rem;
+  }
+  .menu__hamburger .menu__painting figure img {
+    min-width: 280px;
   }
 
   .menu .menu__container-link {

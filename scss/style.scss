@@ -81,14 +81,15 @@ body{
                     left:27%;
                 }
                 & h3{
-                    top: 60%;
+                    top: 72%;
                     max-width: 7rem;
                     font-size: 31px;
                     text-align: left;
                     font-family: "Museo 900";
+                    line-height: 1.4rem;
                 }
                 & figcaption{
-                    top: 50%;
+                    top: 62.5%;
                     font-size: 15px;
                     font-family: "Museo 500"
                 }
@@ -452,11 +453,15 @@ footer{
         justify-content: space-between;
         min-height: 100vh;
         & .menu__painting{
-            padding: 1.8rem;
             & figure{
+                padding:1rem;
+                padding-top:3rem;
                 & h3,
                 & figcaption{
-                    left:1rem;
+                    left:2rem;
+                }
+                & img{
+                    min-width:280px;
                 }
             }
         }
