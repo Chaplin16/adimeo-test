@@ -71,6 +71,28 @@ body{
             text-align: center;
             background-color: #22286E;
             padding: 2rem;
+            & figure{
+                position: relative;
+                padding-bottom: 2rem;
+                & h3, figcaption{
+                    position: absolute;
+                    z-index:10;
+                }
+                & h3{
+                    top: 9rem;
+                    left: 4rem;
+                    max-width: 7rem;
+                    font-size: 31px;
+                    text-align: left;
+                    font-family: "Museo 900";
+                }
+                & figcaption{
+                    top: 8rem;
+                    left: 4rem;
+                    font-size: 15px;
+                    font-family: "Museo 500"
+                }
+            }
         }
     } 
 }
@@ -450,6 +472,12 @@ footer{
         }
     }
     
+    .menu__painting figure{
+        & h3,
+        & figcaption{
+            left:1rem;
+        }
+    }
 }
 
 @media screen and (min-width: 1100px){
