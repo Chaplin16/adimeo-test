@@ -34,6 +34,7 @@ header{
         height:50rem;
         background-color: white;
         border-left: solid 1px $grey;
+        z-index:10;
         &__logo{
             @include shadow;        
         }
@@ -316,17 +317,18 @@ header{
 
 .video{
     text-align:center;
-    padding-left: 5rem;
     position: relative; 
+    background-image: url("/images/pattern.svg");
+    background-size:  70%  100% ;
+    margin-top: 3rem;
     &__image{
-        width:85%;
-        padding-top:5rem;
-        z-index:2;  
+        width:75%;  
+        margin-left: 3rem;
     }
     &__icone-play{
         position: absolute;
-        top:36%;
-        left: 57.5%;
+        top:39%;
+        left: 52%;
         z-index:10;
         width: 1.8rem;
         height: 1.8rem;
@@ -340,13 +342,14 @@ header{
     }
     &__image--title{
         position: absolute;
-        top: 10rem;
-        right: 6rem;
+        bottom: 17%;
+        left: 25%;
         text-align: left;
         color: #fff;
         font-size: 0.7rem;
         text-transform: uppercase;
         font-family: "Museo 900";
+        z-index: 10;
     }
 }
 
