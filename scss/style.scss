@@ -312,6 +312,7 @@ header{
             border-color: $background-color;
             color: $background-color;
             @include paddingButton;
+            margin-bottom: 10rem;
         }
         
     }
@@ -320,27 +321,20 @@ header{
 .video{
     text-align:center;
     position: relative; 
-    background-image: url("/images/pattern.svg");
-    background-size:  70%  100% ;
-    margin-top: 3rem;
-    margin-bottom: -6px;
+    margin-top: 4rem;
     &__image{
         width:75%;  
-        margin-left: 3rem;
+        margin: -10rem 0 2rem 3rem;
     }
     &__icone-play{
         position: absolute;
-        top:38%;
-        left: 52%;
+        bottom: 5.5rem;
+        left: 11rem;
         width: 10%;
-        height: 23%;
-        border-radius: 50%;
-        padding-top: 2vw;
-        border: solid 1px white;
     }
     &__image--title{
         position: absolute;
-        bottom: 14%;
+        top: -3.5rem;
         left: 26%;
         text-align: left;
         font-size: 0.7rem;
@@ -348,7 +342,14 @@ header{
         font-family: "Museo 900";
     }
 }
+.pattern{
+    position: absolute; 
+    bottom: 0;
+    z-index: -15;
 
+
+
+}
 footer{
     background-color: #22286E;
     padding-left:3rem;
