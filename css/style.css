@@ -66,29 +66,37 @@ body {
 .menu__hamburger .menu__painting {
   text-align: center;
   background-color: #22286E;
-  padding: 2rem;
 }
 .menu__hamburger .menu__painting figure {
+  padding-top: 2rem;
   position: relative;
-  padding-bottom: 2rem;
 }
 .menu__hamburger .menu__painting figure h3, .menu__hamburger .menu__painting figure figcaption {
   position: absolute;
   z-index: 10;
+  left: 27%;
 }
 .menu__hamburger .menu__painting figure h3 {
-  top: 9rem;
-  left: 4rem;
+  top: 60%;
   max-width: 7rem;
   font-size: 31px;
   text-align: left;
   font-family: "Museo 900";
 }
 .menu__hamburger .menu__painting figure figcaption {
-  top: 8rem;
-  left: 4rem;
+  top: 50%;
   font-size: 15px;
   font-family: "Museo 500";
+}
+.menu__hamburger .menu__icone-social-networks {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+.menu__hamburger .menu__icone-social-networks i {
+  font-size: 1.6rem;
 }
 
 header, main, footer {
@@ -239,11 +247,11 @@ header .header .header__titre button {
   font-family: "Museo sans 300";
 }
 header .header .header__titre .header__titre--social-networks {
-  margin-top: 4rem;
   display: flex;
   align-items: center;
   column-gap: 1.5rem;
   margin-bottom: 1rem;
+  margin-top: 4rem;
 }
 header .header .header__titre .header__titre--social-networks i {
   font-size: 1.6rem;
@@ -446,6 +454,30 @@ footer a {
   font-size: 0.7rem;
 }
 
+@media screen and (min-width: 665px) {
+  .menu__hamburger {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+  .menu__hamburger .menu__painting {
+    padding: 1.8rem;
+  }
+  .menu__hamburger .menu__painting figure h3, .menu__hamburger .menu__painting figure figcaption {
+    left: 1rem;
+  }
+
+  .menu .menu__container-link {
+    row-gap: 2rem;
+    column-gap: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .menu .menu__container-link a {
+    line-height: 1.5rem;
+  }
+}
 @media screen and (min-width: 800px) {
   .video__image--title {
     font-size: 1rem;
@@ -453,22 +485,8 @@ footer a {
     bottom: 25%;
   }
 
-  .menu__hamburger {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    min-height: 100vh;
-  }
-
   .menu .menu__container-link {
-    row-gap: 2rem;
-  }
-  .menu .menu__container-link a {
-    line-height: 1.5rem;
-  }
-
-  .menu__painting figure h3, .menu__painting figure figcaption {
-    left: 1rem;
+    column-gap: 3rem;
   }
 }
 @media screen and (min-width: 1100px) {
