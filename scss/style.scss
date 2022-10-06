@@ -1,5 +1,6 @@
 @import 'color';
 @import 'mixin';
+@import 'keyframes';
 
 *,
 body,
@@ -289,19 +290,21 @@ header{
         flex-direction: column;
         align-items: center;
         flex:auto;
-        row-gap:1rem;
+        row-gap:3rem;
         & figure{        
-            padding-top:2.3rem;
+            padding-top:2.5rem;
             display: flex;
             flex-direction: column;
             & .block__right--first-paint,
             & .block__right--second-paint{
                 min-width: 200px;
+                max-width: 90%;
+                margin:auto;
             }             
             & figcaption {
                 color: #BCBCBC;
                 font-size: 0.55rem;  
-                padding-top: 7px;    
+                padding: 7px 0 0 1rem;    
             }
         }
         .block__right--button-virtual-visit{

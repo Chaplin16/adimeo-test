@@ -295,20 +295,22 @@ header .header .header__painting figure figcaption img {
   flex-direction: column;
   align-items: center;
   flex: auto;
-  row-gap: 1rem;
+  row-gap: 3rem;
 }
 .block__right figure {
-  padding-top: 2.3rem;
+  padding-top: 2.5rem;
   display: flex;
   flex-direction: column;
 }
 .block__right figure .block__right--first-paint, .block__right figure .block__right--second-paint {
   min-width: 200px;
+  max-width: 90%;
+  margin: auto;
 }
 .block__right figure figcaption {
   color: #BCBCBC;
   font-size: 0.55rem;
-  padding-top: 7px;
+  padding: 7px 0 0 1rem;
 }
 .block__right .block__right--button-virtual-visit {
   background-color: transparent;
