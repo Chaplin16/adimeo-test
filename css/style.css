@@ -355,6 +355,7 @@ header .header .header__painting figure figcaption img {
 footer {
   background-color: #22286E;
   padding-left: 3rem;
+  margin-top: -5px;
 }
 footer .footer {
   display: flex;

@@ -23,6 +23,12 @@ body{
     max-width:1920px;
     margin:auto;
 }
+
+.menu{
+    display: flex;
+    
+}
+
 header{
     background-color: $background-color;
     height: 768px;
@@ -353,6 +359,7 @@ header{
 footer{
     background-color: #22286E;
     padding-left:3rem;
+    margin-top:-5px;
     .footer{
         display: flex;
         justify-content: space-around;
