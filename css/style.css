@@ -21,52 +21,52 @@ body {
   margin: auto;
 }
 
-.menu {
+.menu__hamburger {
   background-color: #333A84;
 }
-.menu__logo {
-  padding: 2rem;
+.menu__hamburger .menu__logo {
+  padding: 2rem 0 0 2rem;
 }
-.menu__container {
+.menu__hamburger .menu__container {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
   row-gap: 2rem;
 }
-.menu__container-link {
+.menu__hamburger .menu__container-link {
   display: flex;
   flex-direction: column;
-  row-gap: 1.5rem;
+  row-gap: 1rem;
+  padding: 2rem;
 }
-.menu__container-link h3 {
+.menu__hamburger .menu__container-link h3 {
   line-height: 1.3rem;
   color: #BAABEB;
   font-family: "Museo 900";
+  font-size: 0.9rem;
 }
-.menu__container-link a {
+.menu__hamburger .menu__container-link a {
   display: block;
   cursor: default;
-  line-height: 1.3rem;
+  line-height: 1.2rem;
   font-family: "Museo Sans 700";
-  font-size: 20px;
+  font-size: 0.8rem;
 }
-.menu__container-link p {
+.menu__hamburger .menu__container-link p {
   padding-top: 5px;
 }
-.menu__container-link p i {
+.menu__hamburger .menu__container-link p i {
   padding-right: 1.2rem;
   font-size: 1.1rem;
   color: #BAABEB;
 }
-.menu__container-link p img {
+.menu__hamburger .menu__container-link p img {
   padding-right: 1rem;
   margin-bottom: -5px;
 }
-.menu__container-painting {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.menu__hamburger .menu__painting {
+  text-align: center;
   background-color: #22286E;
+  padding: 2rem;
 }
 
 header, main, footer {
@@ -429,6 +429,20 @@ footer a {
     font-size: 1rem;
     left: 20%;
     bottom: 25%;
+  }
+
+  .menu__hamburger {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+
+  .menu .menu__container-link {
+    row-gap: 2rem;
+  }
+  .menu .menu__container-link a {
+    line-height: 1.5rem;
   }
 }
 @media screen and (min-width: 1100px) {
