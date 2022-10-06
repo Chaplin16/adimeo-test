@@ -21,8 +21,60 @@ body {
   margin: auto;
 }
 
+.menu {
+  background-color: #333A84;
+}
+.menu__logo {
+  padding: 2rem;
+}
+.menu__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  row-gap: 2rem;
+}
+.menu__container-link {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.menu__container-link h3 {
+  line-height: 1.3rem;
+  color: #BAABEB;
+  font-family: "Museo 900";
+}
+.menu__container-link a {
+  display: block;
+  cursor: default;
+  line-height: 1.3rem;
+  font-family: "Museo Sans 700";
+  font-size: 20px;
+}
+.menu__container-link p {
+  padding-top: 5px;
+}
+.menu__container-link p i {
+  padding-right: 1.2rem;
+  font-size: 1.1rem;
+  color: #BAABEB;
+}
+.menu__container-link p img {
+  padding-right: 1rem;
+  margin-bottom: -5px;
+}
+.menu__container-painting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #22286E;
+}
+
+header, main, footer {
+  display: none;
+}
+
 header {
-  background-color: #434B9C;
+  background-color: #333A84;
   height: 768px;
 }
 header .sidebar {

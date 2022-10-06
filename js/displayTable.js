@@ -16,9 +16,9 @@ const painting = [
 ]
 
 function displayPainting() {
-    const paintingMuseum = document.querySelector('#paintingMuseum');
+    const containerPainting = document.querySelector('#container-painting');
     painting.forEach(function(e){
-        paintingMuseum.innerHTML += `<figure>
+        containerPainting.innerHTML += `<figure>
                                         <img src="${e.img}"
                                             alt="${e.alt}">
                                             <h3>${e.h3}</h3>
