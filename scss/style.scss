@@ -425,9 +425,14 @@ header{
     }
     &__pattern{
         position: absolute; 
-        bottom: 0;
+        top:50px;
         z-index: -15;
+        width:100%;
+        & img{
+            width:100%;
+        }
     }
+
 }
 
 footer{

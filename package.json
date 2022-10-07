@@ -1,0 +1,19 @@
+{
+  "name": "adimeo-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/style.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chaplin16/adimeo-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chaplin16/adimeo-test/issues"
+  },
+  "homepage": "https://github.com/Chaplin16/adimeo-test#readme"
+}

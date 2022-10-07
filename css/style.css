@@ -435,8 +435,12 @@ header .header .header__painting figure figcaption img {
 }
 .video__pattern {
   position: absolute;
-  bottom: 0;
+  top: 50px;
   z-index: -15;
+  width: 100%;
+}
+.video__pattern img {
+  width: 100%;
 }
 
 footer {
