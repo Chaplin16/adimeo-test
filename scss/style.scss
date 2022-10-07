@@ -454,12 +454,14 @@ footer{
     .menu__hamburger{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content:space-between;
         min-height: 100vh;
+        & .menu{
+            width:100%;
+        }
         & .menu__painting{
             & figure{
-                padding:1rem;
-                padding-top:3rem;
+                padding: 2.5rem 2rem 0 2rem ;
                 & h3,
                 & figcaption{
                     left:2rem;
@@ -470,15 +472,19 @@ footer{
             }
         }
     }
-    
-    .menu .menu__container-link{
-        row-gap: 2rem;
-        column-gap:2rem;
-        flex-direction: row;
-        flex-wrap: wrap;
+    .menu .menu__container{
+        width:100%;
+        &-link{
+             row-gap: 2rem;
+            column-gap:2rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex:auto;
+            justify-content: space-around;
 
-        & a{
-            line-height: 1.5rem;
+            & a{
+                line-height: 1.5rem;
+            }
         }
     }
     
@@ -541,6 +547,9 @@ footer{
         &__image--title{
             font-size:1.5rem;
         }
+    }
+    .menu__container-link a {
+        line-height:2rem!important;
     }
 }
 

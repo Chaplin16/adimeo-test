@@ -466,9 +466,11 @@ footer a {
     justify-content: space-between;
     min-height: 100vh;
   }
+  .menu__hamburger .menu {
+    width: 100%;
+  }
   .menu__hamburger .menu__painting figure {
-    padding: 1rem;
-    padding-top: 3rem;
+    padding: 2.5rem 2rem 0 2rem;
   }
   .menu__hamburger .menu__painting figure h3, .menu__hamburger .menu__painting figure figcaption {
     left: 2rem;
@@ -477,11 +479,16 @@ footer a {
     min-width: 280px;
   }
 
+  .menu .menu__container {
+    width: 100%;
+  }
   .menu .menu__container-link {
     row-gap: 2rem;
     column-gap: 2rem;
     flex-direction: row;
     flex-wrap: wrap;
+    flex: auto;
+    justify-content: space-around;
   }
   .menu .menu__container-link a {
     line-height: 1.5rem;
@@ -545,6 +552,10 @@ footer a {
   }
   .video__image--title {
     font-size: 1.5rem;
+  }
+
+  .menu__container-link a {
+    line-height: 2rem !important;
   }
 }
 @media (min-width: 1100px) and (max-width: 1300px) {
