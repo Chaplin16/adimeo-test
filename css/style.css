@@ -1,11 +1,28 @@
-@keyframes slidein {
-  from {
-    transform: scaleX(0);
+@keyframes animLinkMenu {
+  0% {
+    width: 0;
   }
-  to {
-    transform: scaleX(1);
+  100% {
+    width: 100%;
   }
 }
+@keyframes changeBgLogo {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    filter: saturate(200%);
+  }
+}
+.animLink {
+  border-bottom: 1px solid #fff;
+  animation: animLinkMenu 2000ms !important;
+}
+
+.bgLogo {
+  animation: changeBgLogo 500ms forwards;
+}
+
 *,
 body,
 html {
@@ -62,12 +79,6 @@ body {
   line-height: 1.2rem;
   font-family: "Museo Sans 700";
   font-size: 0.8rem;
-}
-.menu__hamburger .menu__container-link a:hover {
-  display: inline;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #fff;
-  animation: 3s slidein;
 }
 .menu__hamburger .menu__container-link p {
   padding-top: 5px;
