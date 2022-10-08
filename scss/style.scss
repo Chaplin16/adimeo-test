@@ -68,7 +68,7 @@ body{
                         cursor:default;
                         font-family: "Museo Sans 700";
                         font-size: 0.8rem;
-                        line-height: 2.5rem;
+
                         border : solid 1px transparent;
                         display: block;
                         outline: 1px solid #0000;
@@ -132,6 +132,7 @@ body{
         &__icone-social-networks{
             @include social-networks;
             padding-left: 2rem;
+            
         }
     } 
 } 
@@ -499,7 +500,7 @@ footer{
                 padding: 2.5rem 2rem 0 2rem ;
                 & h3,
                 & figcaption{
-                    left:2rem;
+                    left:3rem;
                 }
                 & img{
                     min-width:280px;
@@ -510,16 +511,12 @@ footer{
     .menu .menu__container{
         width:100%;
         &-link{
-             row-gap: 2rem;
             column-gap:2rem;
             flex-direction: row;
             flex-wrap: wrap;
             flex:auto;
             justify-content: space-around;
-
-            & a{
-                line-height: 1.5rem;
-            }
+            line-height: 1.5rem;
         }
     }
     
@@ -534,7 +531,9 @@ footer{
     .menu .menu__container-link{
         column-gap:3rem;
     }
-
+    .menu__icone-social-networks{
+        padding-top:1rem;
+    }
 }
 
 @media screen and (min-width: 1100px){
@@ -583,8 +582,20 @@ footer{
             font-size:1.5rem;
         }
     }
-    .menu__container-link a {
-        line-height:2rem!important;
+    .menu__icone-social-networks{
+        position: absolute; 
+        bottom: 2rem;
+        left: 2rem;
+    }
+}
+
+@media screen and (min-width:1250px) {
+    .menu__container-link > div{
+        & a,
+        & h3,
+        & b {
+        line-height:2.7rem!important;
+        }
     }
 }
 

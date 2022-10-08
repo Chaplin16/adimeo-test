@@ -76,7 +76,6 @@ body {
   cursor: default;
   font-family: "Museo Sans 700";
   font-size: 0.8rem;
-  line-height: 2.5rem;
   border: solid 1px transparent;
   display: block;
   outline: 1px solid rgba(0, 0, 0, 0);
@@ -515,7 +514,7 @@ footer a {
     padding: 2.5rem 2rem 0 2rem;
   }
   .menu__hamburger .menu__painting figure h3, .menu__hamburger .menu__painting figure figcaption {
-    left: 2rem;
+    left: 3rem;
   }
   .menu__hamburger .menu__painting figure img {
     min-width: 280px;
@@ -525,14 +524,11 @@ footer a {
     width: 100%;
   }
   .menu .menu__container-link {
-    row-gap: 2rem;
     column-gap: 2rem;
     flex-direction: row;
     flex-wrap: wrap;
     flex: auto;
     justify-content: space-around;
-  }
-  .menu .menu__container-link a {
     line-height: 1.5rem;
   }
 }
@@ -545,6 +541,10 @@ footer a {
 
   .menu .menu__container-link {
     column-gap: 3rem;
+  }
+
+  .menu__icone-social-networks {
+    padding-top: 1rem;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -596,8 +596,15 @@ footer a {
     font-size: 1.5rem;
   }
 
-  .menu__container-link a {
-    line-height: 2rem !important;
+  .menu__icone-social-networks {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .menu__container-link > div a, .menu__container-link > div h3, .menu__container-link > div b {
+    line-height: 2.7rem !important;
   }
 }
 @media (min-width: 1100px) and (max-width: 1300px) {
