@@ -5,15 +5,11 @@
 
 
 //class for animations added with js
-.animLink {
-    border-bottom: 1px solid #fff;
-    animation: animLinkMenu  2000ms !important; 
-}
+
 
 .bgLogo{
     animation: changeBgLogo 500ms forwards;
 }
-
 
 
 *,
@@ -58,33 +54,51 @@ body{
                 flex-direction: column;
                 row-gap:1rem;
                 padding: 2rem;
-                & h3{
-                    line-height: 1.3rem;
-                    color: $purple;
-                    font-family: "Museo 900";
-                    font-size: 0.9rem;
-
-                }
-                & a{
-                    display: block;
-                    cursor:default;
-                    line-height: 1.2rem;
-                    font-family: "Museo Sans 700";
-                    font-size: 0.8rem;
-                   
-                }
-                & p{
-                    padding-top:5px;
-                    i {
-                    padding-right: 1.2rem;
-                    font-size: 1.1rem;
-                    color: $purple;
+                & > div{
+                    display: flex; 
+                    flex-direction: column;
+                    & h3{
+                        line-height: 1.3rem;
+                        color: $purple;
+                        font-family: "Museo 900";
+                        font-size: 0.9rem;
                     }
-                    img{
-                        padding-right: 1rem;
-                        margin-bottom:-5px;   
+                    & a,
+                    & b{      
+                        cursor:default;
+                        font-family: "Museo Sans 700";
+                        font-size: 0.8rem;
+                        line-height: 2.5rem;
+                        border : solid 1px transparent;
+                        display: block;
+                        outline: 1px solid #0000;
+                        width: 100%;
+                        & span{
+                            visibility: hidden;
+                        }
+   
+                        &:hover{
+                            outline: 1px solid #0000;
+                            border-bottom: 1px solid #fff;
+                            animation: animLinkMenu  1000ms !important;
+                            & span {
+                                visibility: visible;
+                            } 
+                        }
                     }
-                } 
+                    & p{
+                        padding-top:5px;
+                        i {
+                        padding-right: 1.2rem;
+                        font-size: 1.1rem;
+                        color: $purple;
+                        }
+                        img{
+                            padding-right: 1rem;
+                            margin-bottom:-5px;   
+                        }
+                    } 
+                }
             }
           }    
         &__painting{

@@ -14,11 +14,6 @@
     filter: saturate(200%);
   }
 }
-.animLink {
-  border-bottom: 1px solid #fff;
-  animation: animLinkMenu 2000ms !important;
-}
-
 .bgLogo {
   animation: changeBgLogo 500ms forwards;
 }
@@ -67,28 +62,46 @@ body {
   row-gap: 1rem;
   padding: 2rem;
 }
-.menu__hamburger .menu__container-link h3 {
+.menu__hamburger .menu__container-link > div {
+  display: flex;
+  flex-direction: column;
+}
+.menu__hamburger .menu__container-link > div h3 {
   line-height: 1.3rem;
   color: #BAABEB;
   font-family: "Museo 900";
   font-size: 0.9rem;
 }
-.menu__hamburger .menu__container-link a {
-  display: block;
+.menu__hamburger .menu__container-link > div a, .menu__hamburger .menu__container-link > div b {
   cursor: default;
-  line-height: 1.2rem;
   font-family: "Museo Sans 700";
   font-size: 0.8rem;
+  line-height: 2.5rem;
+  border: solid 1px transparent;
+  display: block;
+  outline: 1px solid rgba(0, 0, 0, 0);
+  width: 100%;
 }
-.menu__hamburger .menu__container-link p {
+.menu__hamburger .menu__container-link > div a span, .menu__hamburger .menu__container-link > div b span {
+  visibility: hidden;
+}
+.menu__hamburger .menu__container-link > div a:hover, .menu__hamburger .menu__container-link > div b:hover {
+  outline: 1px solid rgba(0, 0, 0, 0);
+  border-bottom: 1px solid #fff;
+  animation: animLinkMenu 1000ms !important;
+}
+.menu__hamburger .menu__container-link > div a:hover span, .menu__hamburger .menu__container-link > div b:hover span {
+  visibility: visible;
+}
+.menu__hamburger .menu__container-link > div p {
   padding-top: 5px;
 }
-.menu__hamburger .menu__container-link p i {
+.menu__hamburger .menu__container-link > div p i {
   padding-right: 1.2rem;
   font-size: 1.1rem;
   color: #BAABEB;
 }
-.menu__hamburger .menu__container-link p img {
+.menu__hamburger .menu__container-link > div p img {
   padding-right: 1rem;
   margin-bottom: -5px;
 }

@@ -6,9 +6,8 @@ menuTitle.forEach(menu => {
     menu.addEventListener('click', function() {
         menuLogo.classList.add('bgLogo');
         menuLogo.addEventListener("animationend", function () {
-            menuLogo.classList.remove("bgLogo");
+            menuLogo.classList.remove('bgLogo');
         })
     })
 })
 
- 
