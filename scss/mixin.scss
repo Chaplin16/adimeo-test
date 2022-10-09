@@ -12,7 +12,7 @@
 }
 
 @mixin paddingButton{
-    padding: 0.7rem 1.3rem;
+    padding: 0.7rem 0.9rem;
 }
 
 @mixin chevron{
@@ -23,7 +23,6 @@
 @mixin social-networks{
     display: flex;
     align-items: center;
-    column-gap: 1.5rem;
     margin-bottom:1rem;
     & i {
         font-size: 1.6rem;

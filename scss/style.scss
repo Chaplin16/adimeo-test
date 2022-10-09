@@ -291,6 +291,7 @@ header{
             }
             .header__titre--social-networks{
                @include social-networks;
+               column-gap: 0.6rem;
                margin-top:4rem;
                outline: transparent;
                & i:hover,
@@ -352,10 +353,10 @@ header{
 .block{
     &__left{
         padding-left: 5rem;
-        padding-top:28rem;
+        padding-top:35rem;
         background-color: $background-color;
         & p:nth-of-type(1){  //€tarif
-            padding: 2rem 0 1.5rem 0;
+            padding: 2.5rem 0 1.5rem 0;
             font-size: 1.9rem;
             font-family:"Museo 700";
             & i{
@@ -379,16 +380,16 @@ header{
         &--button-tarif{
             background-color: transparent;
             border: none;
-            font-size:0.9rem;
-            border-bottom: solid 1px white; 
+            font-size:0.6rem;    
             padding-bottom: 0.3rem;
             font-family: "Museo Sans 700";
+            border-bottom: solid 1px #fff;
             & i{
                 @include chevron;
             }
         }
         h2{
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             padding: 3rem 0 1.5rem 0;
             font-family: "Museo 900";
         }
@@ -480,10 +481,10 @@ header{
     }
     &__image--title{
         position: absolute;
-        bottom: 30%;
+        bottom: 35%;
         left: 20%;
         text-align: left;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         text-transform: uppercase;
         font-family: "Museo 900";
     }
@@ -553,6 +554,23 @@ footer{
         }
     }
     
+}
+@media screen and (min-width: 375px){
+    .block .block__left{
+        padding-top:30rem;
+    }
+    .header .header__titre--social-networks{
+        column-gap:1.3rem!important;
+    }
+    .block__left--button-tarif{
+        font-size:0.7rem;
+    }
+}
+
+@media screen and (min-width: 500px){
+    .block__left .block__left--button-tarif{
+        font-size:0.9rem;
+    }
 }
 
 @media screen and (min-width: 800px){
