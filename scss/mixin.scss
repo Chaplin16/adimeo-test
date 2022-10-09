@@ -24,7 +24,15 @@
     display: flex;
     align-items: center;
     margin-bottom:1rem;
+    outline : solid 1px transparent;
     & i {
         font-size: 1.6rem;
+        transition: width 700ms, height 700ms, background-color 700ms, transform 700ms;
+        border-radius: 50%;
+        outline : solid 1px transparent;
+        &:hover,
+        &:focus{
+            background-color: $purple;
+        }
     }
 }
