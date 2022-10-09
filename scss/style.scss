@@ -414,15 +414,30 @@ header{
         &--text-three{
             display: none;
         }
+        
         &--button-see-more{
             background-color: transparent;
-            padding: 1.5rem 0 5rem 0;
+            margin: 1rem 0 5rem 0;
             font-size:0.9rem;
-            border: none;
+            border: none; 
+            position: relative;
             & i {
                 @include chevron;
             }
-
+            &::after {
+                content: "";
+                position: absolute;
+                top: 30px;
+                left: 0;
+                margin: auto;
+                width: 0%;
+                background: #fff;
+                height: 2px;
+                transition: width 500ms ease-in-out;
+            }
+            &:hover::after{
+                width:100%;
+            }
         }
     }
     &__right{
@@ -465,6 +480,7 @@ header{
         
     }
 }
+
 
 .video{
      text-align:center;

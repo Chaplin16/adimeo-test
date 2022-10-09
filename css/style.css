@@ -439,13 +439,28 @@ header .header .header__painting figure figcaption img {
 }
 .block__left--button-see-more {
   background-color: transparent;
-  padding: 1.5rem 0 5rem 0;
+  margin: 1rem 0 5rem 0;
   font-size: 0.9rem;
   border: none;
+  position: relative;
 }
 .block__left--button-see-more i {
   font-size: 0.75rem;
   padding-left: 5px;
+}
+.block__left--button-see-more::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  margin: auto;
+  width: 0%;
+  background: #fff;
+  height: 2px;
+  transition: width 500ms ease-in-out;
+}
+.block__left--button-see-more:hover::after {
+  width: 100%;
 }
 .block__right {
   background-color: white;
