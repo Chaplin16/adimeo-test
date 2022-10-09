@@ -1,3 +1,4 @@
+//page menu anim background logo
 const menuTitle = document.querySelectorAll('.menu__title');
 const menuLogo = document.querySelector('.menu__logo');
 let timeOut;
