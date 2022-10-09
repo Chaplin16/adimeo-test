@@ -20,6 +20,22 @@
     background: #3f47d3;
   }
 }
+@keyframes appearMenuInTop {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes appearMenuInRight {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 .bgLogo {
   animation: changeBgLogo 500ms ease-in-out;
 }
@@ -56,8 +72,9 @@ body {
   display: none;
 }
 
-.menu__hamburger {
+.menu__hamburger .menu {
   background-color: #333A84;
+  animation: appearMenuInTop 1000ms;
 }
 .menu__hamburger .menu__logo {
   padding: 2rem 0 0 2rem;
@@ -89,6 +106,7 @@ body {
   font-family: "Museo Sans 700";
   font-size: 0.8rem;
   display: inline;
+  margin-top: 8px;
 }
 .menu__hamburger .menu__container-link > div a b, .menu__hamburger .menu__container-link > div b b {
   visibility: hidden;
@@ -125,8 +143,10 @@ body {
   margin-bottom: -5px;
 }
 .menu__hamburger .menu__painting {
+  animation: appearMenuInRight 1000ms;
   text-align: center;
   background-color: #22286E;
+  padding-top: 2rem !important;
 }
 .menu__hamburger .menu__painting figure {
   position: relative;
@@ -163,9 +183,9 @@ body {
 .menu__hamburger .menu__icone-social-networks {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
   outline: solid 1px transparent;
   padding-left: 2rem;
+  padding-bottom: 1rem;
   column-gap: 1.5rem;
 }
 .menu__hamburger .menu__icone-social-networks i {
@@ -337,9 +357,9 @@ header .header .header__titre button:hover, header .header .header__titre button
 header .header .header__titre .header__titre--social-networks {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
   outline: solid 1px transparent;
   margin-top: 4rem;
+  padding-bottom: 1rem;
 }
 header .header .header__titre .header__titre--social-networks i {
   font-size: 1.6rem;
@@ -566,10 +586,11 @@ footer .footer {
   flex-wrap: wrap;
   min-height: 3rem;
   row-gap: 1rem;
+  column-gap: 1rem;
   align-items: center;
   margin: auto;
   max-width: 83%;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 }
 footer a {
   font-size: 0.7rem;
@@ -634,6 +655,7 @@ footer a {
 
   .menu__icone-social-networks {
     padding-top: 1rem;
+    padding-bottom: 0 !important;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -693,7 +715,7 @@ footer a {
 }
 @media screen and (min-width: 1250px) {
   .menu__container-link > div a, .menu__container-link > div h3, .menu__container-link > div b, .menu__container-link > div p {
-    padding-top: 1.5rem !important;
+    padding-top: 1rem !important;
   }
 }
 @media (min-width: 1100px) and (max-width: 1300px) {
@@ -717,6 +739,10 @@ footer a {
   main .block__left {
     max-width: 32.45rem !important;
     height: auto;
+  }
+
+  footer {
+    padding: 1rem 0;
   }
 }
 @media screen and (min-width: 1700px) {

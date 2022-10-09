@@ -41,8 +41,10 @@ body{
 }
 
 .menu__hamburger{
-    background-color: #333A84;
+    
     & .menu{
+        background-color: #333A84;
+        animation: appearMenuInTop 1000ms;
         &__logo{
             padding: 2rem 0 0 2rem;
         }
@@ -71,6 +73,7 @@ body{
                         font-family: "Museo Sans 700";
                         font-size: 0.8rem;
                         display: inline;
+                        margin-top: 8px;
                         & b{
                             visibility: hidden;
                         }   
@@ -113,8 +116,10 @@ body{
             }
           }    
         &__painting{
+            animation: appearMenuInRight 1000ms;
             text-align: center;
             background-color: #22286E;
+            padding-top:2rem!important;
             & figure{               
                 position: relative;
                 padding-top:2rem;               
@@ -154,6 +159,7 @@ body{
         &__icone-social-networks{
             @include social-networks;
             padding-left: 2rem;
+            padding-bottom:1rem;
             column-gap:1.5rem;   
             & i {
                 padding:8px;   
@@ -304,7 +310,8 @@ header{
             }
             .header__titre--social-networks{
                @include social-networks;             
-               margin-top:4rem;     
+               margin-top:4rem; 
+               padding-bottom:1rem;    
             & i {
                 padding:8px;   
             }
@@ -532,10 +539,11 @@ footer{
         flex-wrap: wrap;
         min-height: 3rem;
         row-gap:1rem;
+        column-gap:1rem;
         align-items: center;
         margin: auto;
         max-width: 83%;
-        padding:1rem 0;
+        padding:1.5rem 0;
     }
     & a{
         font-size: 0.7rem;
@@ -605,6 +613,7 @@ footer{
     }
     .menu__icone-social-networks{
         padding-top:1rem;
+        padding-bottom:0!important;
     }
 }
 
@@ -667,7 +676,7 @@ footer{
         & h3,
         & b,
         & p{
-        padding-top:1.5rem!important;
+        padding-top:1rem!important;
         }
     }
 }
@@ -696,6 +705,10 @@ footer{
         max-width: 32.45rem!important;
         height: auto;
     }  
+    footer{
+        padding: 1rem 0;
+        
+    }
 }
 
 @media screen and (min-width: 1700px){
