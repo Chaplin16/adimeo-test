@@ -292,6 +292,14 @@ header{
             .header__titre--social-networks{
                @include social-networks;
                margin-top:4rem;
+               outline: transparent;
+               & i:hover,
+               & i:focus{
+                box-shadow: inset 4em 4em 4em 4em $purple;
+                border-radius: 50%;
+                padding:5px;
+                
+               }
             }
         }
         .header__painting{

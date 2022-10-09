@@ -309,9 +309,15 @@ header .header .header__titre .header__titre--social-networks {
   column-gap: 1.5rem;
   margin-bottom: 1rem;
   margin-top: 4rem;
+  outline: transparent;
 }
 header .header .header__titre .header__titre--social-networks i {
   font-size: 1.6rem;
+}
+header .header .header__titre .header__titre--social-networks i:hover, header .header .header__titre .header__titre--social-networks i:focus {
+  box-shadow: inset 4em 4em 4em 4em #BAABEB;
+  border-radius: 50%;
+  padding: 5px;
 }
 header .header .header__painting {
   margin-left: 70px;
