@@ -6,9 +6,11 @@
 
 //class for animations added with js
 .bgLogo{
-    animation: changeBgLogo 500ms forwards;
+    animation: changeBgLogo 500ms ease-in-out;
 }
-
+.changeBgHamburger{
+    animation: changeBgHamburger 500ms ease-in-out;
+}
 
 *,
 body,
@@ -196,8 +198,10 @@ header{
                 width: 1rem;
                 border: solid 1px white;
                 background-color: white;
+                color: #fff;
                 border-radius: 4px;
                 left: 1.1rem;
+                display:15;
             }
             &-l1{
                 top:100px;

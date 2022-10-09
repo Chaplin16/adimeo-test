@@ -3,8 +3,22 @@
     0%{
       background-color: transparent;   
     }
-    100%{
-      filter: saturate(200%);
+    50%{ 
+      filter: saturate(180%);
+   }
+    100%{ 
+       filter: saturate(180%);
     }
 }
 
+@keyframes changeBgHamburger{
+  0%{
+    background-color: transparent;   
+  }
+  40%{
+    background: #3f47d3;
+  }
+  100%{
+    background: #3f47d3;
+  }
+}
