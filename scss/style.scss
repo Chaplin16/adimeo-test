@@ -451,6 +451,12 @@ header{
             color: $background-color;
             @include paddingButton;
             margin-bottom: 2rem;
+            transition: 250ms;
+            &:hover,
+            &:focus{
+                box-shadow: inset 25em 0 0 0 $background-color;
+                color: #fff;
+            }
         }
         
     }

@@ -463,6 +463,11 @@ header .header .header__painting figure figcaption img {
   color: #434B9C;
   padding: 0.7rem 1.3rem;
   margin-bottom: 2rem;
+  transition: 250ms;
+}
+.block__right .block__right--button-virtual-visit:hover, .block__right .block__right--button-virtual-visit:focus {
+  box-shadow: inset 25em 0 0 0 #434B9C;
+  color: #fff;
 }
 
 .video {
