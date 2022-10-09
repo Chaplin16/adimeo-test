@@ -298,6 +298,10 @@ header .header .header__titre button {
   padding: 0.7rem 1.3rem;
   color: white;
   font-family: "Museo sans 300";
+  transition: 250ms;
+}
+header .header .header__titre button:hover, header .header .header__titre button:focus {
+  box-shadow: inset 14em 0 0 0 #BAABEB;
 }
 header .header .header__titre .header__titre--social-networks {
   display: flex;
@@ -647,6 +651,9 @@ footer a {
   }
   header .header__titre h1 {
     font-size: 4.85rem !important;
+  }
+  header .header__titre--calendar {
+    margin-top: 14rem !important;
   }
 
   main .block__left {

@@ -283,6 +283,11 @@ header{
                 @include paddingButton;
                 color: white;
                 font-family: 'Museo sans 300';
+                transition: 250ms;
+                &:hover,
+                &:focus{
+                    box-shadow: inset 14em 0 0 0 $purple;
+                }
             }
             .header__titre--social-networks{
                @include social-networks;
@@ -647,6 +652,10 @@ footer{
         .header__titre h1{
             font-size: 4.85rem!important;
         }
+        .header__titre--calendar{
+            margin-top:14rem!important;
+        }
+
     }
     main .block__left{
         max-width: 40.7rem!important;
