@@ -3,7 +3,6 @@
 @import 'keyframes';
 
 
-
 //class for animations added with js
 .bgLogo{
     animation: changeBgLogo 500ms ease-in-out;
@@ -33,8 +32,7 @@ p{
 
 body{
     max-width:1920px;
-    margin:auto;
-    
+    margin:auto;  
 }
 
 #menu__hamburger{
@@ -42,7 +40,6 @@ body{
 }
 
 .menu__hamburger{
-    
     & .menu{
         background-color: #333A84;
         animation: appearMenuInTop 1000ms;
@@ -76,7 +73,6 @@ body{
                             font-family: "Museo Sans 700";
                             font-size: 0.8rem;
                             display: inline-block;
-                            
                             & span{
                                 visibility: hidden;
                             }   
@@ -118,7 +114,7 @@ body{
                     } 
                 }
             }
-          }    
+        }    
         &__painting{
             animation: appearMenuInRight 1000ms;
             text-align: center;
@@ -138,10 +134,8 @@ body{
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                
                 overflow: hidden;
                 text-align: center;
-                //margin:1rem auto 0 auto!important;
                 & img{
                     position: absolute;
                     width:100%;
@@ -149,11 +143,11 @@ body{
                     object-fit: cover;
                     filter: brightness(0.5);
                     transition: transform 0.3s ease-out;
-                    
-                }&:hover img{
+                } 
+                &:hover img{
                         overflow: hidden;
                         transform:scale(1.3);
-                    }      
+                }      
                 & h3, 
                 & figcaption{
                     position: absolute;
@@ -173,8 +167,7 @@ body{
                     font-size: 15px;
                     font-family: "Museo 500"
                 }
-            }
-            
+            }  
         }
         &__icone-social-networks{
             @include social-networks;
@@ -243,22 +236,22 @@ header{
             display: flex;
             flex-direction: column;
             align-items: center;
-            row-gap: 3rem;
+            row-gap: 3.8rem;
             &--link{
-                    padding-top: 2rem;
-                    padding-bottom: 1.5rem;
-                    margin-bottom: 1rem;
-                    font-family: 'Museo Sans 700';
-                    position: relative;
-                    color: $background-color;
-                    &::after{
-                        @include pseudoElement;
-                        bottom: -5px;
-                    }
-                    &::before{
-                        @include pseudoElement;
-                        top:160px;
-                    }
+                padding-top: 2rem;
+                padding-bottom: 1.5rem;
+                margin-bottom: 1rem;
+                font-family: 'Museo Sans 700';
+                position: relative;
+                color: $background-color;
+                &::after{
+                    @include pseudoElement;
+                    bottom: -5px;
+                }
+                &::before{
+                    @include pseudoElement;
+                    top:160px;
+                }
             }
             & i{
                 position: relative; 
@@ -271,8 +264,7 @@ header{
             }
         }
     }
-
-// header left text and painting
+// header first screen    left block
     .header{
         display: flex;
         flex-direction: column;
@@ -298,22 +290,7 @@ header{
             .header__titre--calendar {
                 font-family: 'Museo sans 300';
                 font-size:0.8rem;
-                i{
-                    position: relative;
-                    border: solid 1px $purple;
-                    padding:10px;
-                    border-radius: 50%;
-                    background-color: $purple;
-                    margin-right: 10px;
-                    font-size:1.3rem;
-                    &::after{
-                        content:"31";
-                        position: absolute; 
-                        font-size: 15px;
-                        left:16px;
-                        top:21px;
-                    }
-                }  
+                @include iconCalendar;
             }
             button{
                 background-color: $background-color;
@@ -335,6 +312,7 @@ header{
              
             }
         }
+// header first screen    right block
         .header__painting{
             margin-left:70px;
             position: relative;
@@ -357,7 +335,7 @@ header{
                 display: flex;
                 flex-flow: column;
                 .header__painting--photo{
-                    height: 768px;
+                    height: 900px;
                     object-fit: cover;  
                 }
                 figcaption{
@@ -382,6 +360,7 @@ header{
 }
 
 // main
+//block left with text
 .block{
     &__left{
         padding-left: 5rem;
@@ -469,6 +448,7 @@ header{
             }
         }
     }
+//block right with paints
     &__right{
         background-color: white;
         padding-left: 4rem;
@@ -506,11 +486,9 @@ header{
                 color: #fff;
             }
         }
-        
     }
 }
-
-
+// block video at the bottom
 .video{
     text-align:center;
     position: relative; 
@@ -543,7 +521,7 @@ header{
     }
     &__pattern{
         position: absolute; 
-        top:50px;
+        top:85px;
         z-index: -15;
         width:100%;
         & img{
@@ -575,9 +553,8 @@ footer{
 
 @media screen and (min-width: 375px){
     .block .block__left{
-        padding-top:30rem;
+        padding-top:35rem;
     }
-    
     .block__left--button-tarif{
         font-size:0.7rem;
     }
@@ -662,16 +639,17 @@ footer{
             font-size: 0.9rem!important;
         }
         .header__titre--social-networks{
-            margin-top: 7rem!important;
+            margin-top: 12.5rem!important;
         }     
     }
     main .block{
         display: flex;
         &__left{
-            padding-top:0rem!important; 
+            padding-top:7rem!important; 
             padding-left: 6rem;
         }
         &__right{
+            padding-top:7rem;
             padding-left: 0;
             &--first-paint{
                 max-width: 458px;
@@ -717,7 +695,6 @@ footer{
     .menu__container-link > div{
         & a,
         & h3,
-        & b,
         & p{
         padding-top:1.2rem!important;
         }
@@ -746,7 +723,9 @@ footer{
         .header__titre--calendar{
             margin-top:14rem!important;
         }
-
+        .header .header__titre--social-networks{
+            margin-top:10rem!important;
+        }
     }
     main .block__left{
         max-width: 40.7rem!important;

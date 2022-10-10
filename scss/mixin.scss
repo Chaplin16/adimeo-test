@@ -11,6 +11,25 @@
     box-shadow: 0.8px 1px 3px rgba(57, 58, 68, 0.6)!important;
 }
 
+@mixin iconCalendar{
+    i{
+        position: relative;
+        border: solid 1px $purple;
+        padding:10px;
+        border-radius: 50%;
+        background-color: $purple;
+        margin-right: 10px;
+        font-size:1.3rem;
+        &::after{
+            content:"31";
+            position: absolute; 
+            font-size: 15px;
+            left:16px;
+            top:20px;
+        }
+    }  
+}
+
 @mixin paddingButton{
     padding: 0.7rem 0.9rem;
 }
