@@ -13,7 +13,7 @@
   0% {
     background-color: transparent;
   }
-  40% {
+  60% {
     background: #3f47d3;
   }
   100% {
@@ -105,7 +105,7 @@ body {
   cursor: default;
   font-family: "Museo Sans 700";
   font-size: 0.8rem;
-  display: inline;
+  display: inline-block;
   margin-top: 8px;
 }
 .menu__hamburger .menu__container-link > div a b, .menu__hamburger .menu__container-link > div b b {
