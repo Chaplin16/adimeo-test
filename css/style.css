@@ -210,26 +210,28 @@ body {
 .menu__hamburger .menu__icone-social-networks i {
   padding: 8px;
   font-size: 1.6rem;
-  z-index: 15;
-  z-index: 15;
 }
-.menu__hamburger .menu__icone-social-networks > * {
+.menu__hamburger .menu__icone-social-networks div {
   position: relative;
-  z-index: 2;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.menu__hamburger .menu__icone-social-networks b:before {
+.menu__hamburger .menu__icone-social-networks div > * {
+  position: relative;
+}
+.menu__hamburger .menu__icone-social-networks div::before {
   content: "";
   position: absolute;
   inset: 0;
-  width: 50px;
-  height: 50px;
   border-radius: 50%;
   transform: scale(0);
-  background-color: rgba(186, 171, 235, 0.719);
-  z-index: 1;
-  transition: transform 0.4s ease-in-out;
+  background: #BAABEB;
+  transition: transform 0.4s;
 }
-.menu__hamburger .menu__icone-social-networks b:hover::before {
+.menu__hamburger .menu__icone-social-networks div:hover::before {
   transform: scale(1);
 }
 .menu__hamburger .menu__icone-social-networks i {
@@ -400,26 +402,28 @@ header .header .header__titre .header__titre--social-networks {
 header .header .header__titre .header__titre--social-networks i {
   padding: 8px;
   font-size: 1.6rem;
-  z-index: 15;
-  z-index: 15;
 }
-header .header .header__titre .header__titre--social-networks > * {
+header .header .header__titre .header__titre--social-networks div {
   position: relative;
-  z-index: 2;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-header .header .header__titre .header__titre--social-networks b:before {
+header .header .header__titre .header__titre--social-networks div > * {
+  position: relative;
+}
+header .header .header__titre .header__titre--social-networks div::before {
   content: "";
   position: absolute;
   inset: 0;
-  width: 50px;
-  height: 50px;
   border-radius: 50%;
   transform: scale(0);
-  background-color: rgba(186, 171, 235, 0.719);
-  z-index: 1;
-  transition: transform 0.4s ease-in-out;
+  background: #BAABEB;
+  transition: transform 0.4s;
 }
-header .header .header__titre .header__titre--social-networks b:hover::before {
+header .header .header__titre .header__titre--social-networks div:hover::before {
   transform: scale(1);
 }
 header .header .header__painting {

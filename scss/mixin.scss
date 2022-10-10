@@ -29,30 +29,31 @@
  & i {
      padding:8px;  
      font-size: 1.6rem;  
-     z-index:15;
-     z-index:15;
  }
- & > * {
-     position: relative;
-     z-index: 2;
- }
- & b:before {
-     content: '';
-     position: absolute;
-     inset: 0;
-     width:50px;
-     height:50px;
-     border-radius: 50%; 
-     transform: scale(0);
-     background-color: rgba(186, 171, 235, 0.719);
-     z-index:1;
-     transition: transform 0.4s ease-in-out;
- }
- & b:hover {
-     &::before {
-         transform: scale(1);
-     }
- }
-
+ div {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > * {
+      position: relative
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      transform: scale(0);
+      background: $purple;
+      transition: transform 0.4s;
+    }
+    &:hover {
+      &::before {
+        transform: scale(1);        
+      }
+    }
+  }
 }
 
