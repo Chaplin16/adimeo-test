@@ -450,7 +450,7 @@ header .header .header__painting figure {
   flex-flow: column;
 }
 header .header .header__painting figure .header__painting--photo {
-  height: 900px;
+  height: 40rem;
   object-fit: cover;
 }
 header .header .header__painting figure figcaption {
@@ -738,7 +738,7 @@ footer a {
     font-size: 0.9rem !important;
   }
   header .header .header__titre--social-networks {
-    margin-top: 12.5rem !important;
+    margin-top: 12rem !important;
   }
 
   main .block {
@@ -819,6 +819,9 @@ footer a {
   }
   header .header .header__titre--social-networks {
     margin-top: 10rem !important;
+  }
+  header .header__painting--photo {
+    height: 42rem !important;
   }
 
   main .block__left {

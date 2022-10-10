@@ -335,7 +335,7 @@ header{
                 display: flex;
                 flex-flow: column;
                 .header__painting--photo{
-                    height: 900px;
+                    height: 40rem;
                     object-fit: cover;  
                 }
                 figcaption{
@@ -639,7 +639,7 @@ footer{
             font-size: 0.9rem!important;
         }
         .header__titre--social-networks{
-            margin-top: 12.5rem!important;
+            margin-top: 12rem!important;
         }     
     }
     main .block{
@@ -725,6 +725,9 @@ footer{
         }
         .header .header__titre--social-networks{
             margin-top:10rem!important;
+        }
+        .header__painting--photo{
+            height:42rem!important;
         }
     }
     main .block__left{
