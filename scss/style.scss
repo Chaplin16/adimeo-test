@@ -331,10 +331,8 @@ header{
             .header__titre--social-networks{
                @include social-networks;             
                margin-top:4rem; 
-               padding-bottom:1rem;    
-            & i {
-                padding:8px;   
-            }
+               padding-bottom:1rem;   
+             
             }
         }
         .header__painting{
@@ -524,10 +522,15 @@ header{
     &__icone-play{
         position: absolute;
         width: 10%;
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding-bottom:2.5rem;
+        
+        &:hover{
+            background-color: $purple;
+            border-radius: 50%;
+            //background-size: cover;
+        }
     }
     &__image--title{
         position: absolute;
@@ -634,10 +637,10 @@ footer{
         column-gap:3rem;
     }
     .menu__icone-social-networks{
-        padding-top:1rem;
-        padding-bottom:0!important;
+        position: absolute; 
+        bottom: 0;
+        left: 2rem;
     }
-
 }
 
 @media screen and (min-width: 1100px){
@@ -687,20 +690,7 @@ footer{
         }
     }
     .menu__icone-social-networks{
-        position: absolute; 
-        bottom: 2rem;
-        left: 2rem;
-    }
-}
-
-@media screen and (min-width:1250px) {
-    .menu__container-link > div{
-        & a,
-        & h3,
-        & b,
-        & p{
-        padding-top:1rem!important;
-        }
+        margin-top: 5rem!important;
     }
 }
 
@@ -724,6 +714,14 @@ footer{
             font-size: 0.9rem!important;
         }
     }
+    .menu__container-link > div{
+        & a,
+        & h3,
+        & b,
+        & p{
+        padding-top:1.2rem!important;
+        }
+    }
     main .block__left{
         max-width: 32.45rem!important;
         height: auto;
@@ -731,6 +729,9 @@ footer{
     footer{
         padding: 1rem 0;
         
+    }
+    .menu__icone-social-networks{
+        margin-top: 5rem!important;
     }
 }
 

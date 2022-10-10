@@ -13,7 +13,7 @@
   0% {
     background: transparent;
   }
-  60% {
+  50% {
     background: #3f47d3;
   }
   100% {
@@ -202,18 +202,35 @@ body {
   display: flex;
   align-items: center;
   outline: solid 1px transparent;
+  position: relative;
   padding-left: 2rem;
   padding-bottom: 1rem;
   column-gap: 1.5rem;
 }
 .menu__hamburger .menu__icone-social-networks i {
+  padding: 8px;
   font-size: 1.6rem;
-  transition: width 700ms, height 700ms, background-color 700ms, transform 700ms;
-  border-radius: 50%;
-  outline: solid 1px transparent;
+  z-index: 15;
+  z-index: 15;
 }
-.menu__hamburger .menu__icone-social-networks i:hover, .menu__hamburger .menu__icone-social-networks i:focus {
-  background-color: #BAABEB;
+.menu__hamburger .menu__icone-social-networks > * {
+  position: relative;
+  z-index: 2;
+}
+.menu__hamburger .menu__icone-social-networks b:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transform: scale(0);
+  background-color: rgba(186, 171, 235, 0.719);
+  z-index: 1;
+  transition: transform 0.4s ease-in-out;
+}
+.menu__hamburger .menu__icone-social-networks b:hover::before {
+  transform: scale(1);
 }
 .menu__hamburger .menu__icone-social-networks i {
   padding: 8px;
@@ -376,20 +393,34 @@ header .header .header__titre .header__titre--social-networks {
   display: flex;
   align-items: center;
   outline: solid 1px transparent;
+  position: relative;
   margin-top: 4rem;
   padding-bottom: 1rem;
 }
 header .header .header__titre .header__titre--social-networks i {
-  font-size: 1.6rem;
-  transition: width 700ms, height 700ms, background-color 700ms, transform 700ms;
-  border-radius: 50%;
-  outline: solid 1px transparent;
-}
-header .header .header__titre .header__titre--social-networks i:hover, header .header .header__titre .header__titre--social-networks i:focus {
-  background-color: #BAABEB;
-}
-header .header .header__titre .header__titre--social-networks i {
   padding: 8px;
+  font-size: 1.6rem;
+  z-index: 15;
+  z-index: 15;
+}
+header .header .header__titre .header__titre--social-networks > * {
+  position: relative;
+  z-index: 2;
+}
+header .header .header__titre .header__titre--social-networks b:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transform: scale(0);
+  background-color: rgba(186, 171, 235, 0.719);
+  z-index: 1;
+  transition: transform 0.4s ease-in-out;
+}
+header .header .header__titre .header__titre--social-networks b:hover::before {
+  transform: scale(1);
 }
 header .header .header__painting {
   margin-left: 70px;
@@ -569,10 +600,13 @@ header .header .header__painting figure figcaption img {
 .video__icone-play {
   position: absolute;
   width: 10%;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding-bottom: 2.5rem;
+}
+.video__icone-play:hover {
+  background-color: #BAABEB;
+  border-radius: 50%;
 }
 .video__image--title {
   position: absolute;
@@ -673,8 +707,9 @@ footer a {
   }
 
   .menu__icone-social-networks {
-    padding-top: 1rem;
-    padding-bottom: 0 !important;
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -727,14 +762,7 @@ footer a {
   }
 
   .menu__icone-social-networks {
-    position: absolute;
-    bottom: 2rem;
-    left: 2rem;
-  }
-}
-@media screen and (min-width: 1250px) {
-  .menu__container-link > div a, .menu__container-link > div h3, .menu__container-link > div b, .menu__container-link > div p {
-    padding-top: 1rem !important;
+    margin-top: 5rem !important;
   }
 }
 @media (min-width: 1100px) and (max-width: 1300px) {
@@ -755,6 +783,10 @@ footer a {
     font-size: 0.9rem !important;
   }
 
+  .menu__container-link > div a, .menu__container-link > div h3, .menu__container-link > div b, .menu__container-link > div p {
+    padding-top: 1.2rem !important;
+  }
+
   main .block__left {
     max-width: 32.45rem !important;
     height: auto;
@@ -762,6 +794,10 @@ footer a {
 
   footer {
     padding: 1rem 0;
+  }
+
+  .menu__icone-social-networks {
+    margin-top: 5rem !important;
   }
 }
 @media screen and (min-width: 1700px) {

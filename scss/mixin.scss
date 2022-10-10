@@ -23,15 +23,36 @@
 @mixin social-networks{
     display: flex;
     align-items: center;
-    outline : solid 1px transparent;
-    & i {
-        font-size: 1.6rem;
-        transition: width 700ms, height 700ms, background-color 700ms, transform 700ms;
-        border-radius: 50%;
-        outline : solid 1px transparent;
-        &:hover,
-        &:focus{
-            background-color: $purple;
-        }
-    }
+    outline : solid 1px transparent; 
+    position: relative;
+   
+ & i {
+     padding:8px;  
+     font-size: 1.6rem;  
+     z-index:15;
+     z-index:15;
+ }
+ & > * {
+     position: relative;
+     z-index: 2;
+ }
+ & b:before {
+     content: '';
+     position: absolute;
+     inset: 0;
+     width:50px;
+     height:50px;
+     border-radius: 50%; 
+     transform: scale(0);
+     background-color: rgba(186, 171, 235, 0.719);
+     z-index:1;
+     transition: transform 0.4s ease-in-out;
+ }
+ & b:hover {
+     &::before {
+         transform: scale(1);
+     }
+ }
+
 }
+
