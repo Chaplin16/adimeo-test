@@ -100,22 +100,24 @@ body {
   font-family: "Museo 900";
   font-size: 0.9rem;
 }
-.menu__hamburger .menu__container-link > div a, .menu__hamburger .menu__container-link > div b {
+.menu__hamburger .menu__container-link > div li {
+  list-style: none;
+}
+.menu__hamburger .menu__container-link > div li a, .menu__hamburger .menu__container-link > div li span {
   position: relative;
   cursor: default;
   font-family: "Museo Sans 700";
   font-size: 0.8rem;
   display: inline-block;
-  margin-top: 8px;
 }
-.menu__hamburger .menu__container-link > div a b, .menu__hamburger .menu__container-link > div b b {
+.menu__hamburger .menu__container-link > div li a span, .menu__hamburger .menu__container-link > div li span span {
   visibility: hidden;
 }
-.menu__hamburger .menu__container-link > div a:hover b, .menu__hamburger .menu__container-link > div b:hover b {
-  padding-left: 2px;
+.menu__hamburger .menu__container-link > div li a:hover span, .menu__hamburger .menu__container-link > div li span:hover span {
+  padding-left: 5px;
   visibility: visible;
 }
-.menu__hamburger .menu__container-link > div a::after {
+.menu__hamburger .menu__container-link > div li a::after {
   content: "";
   position: absolute;
   display: block;
@@ -127,11 +129,12 @@ body {
   background: #fff;
   transition: transform 0.3s ease-out;
 }
-.menu__hamburger .menu__container-link > div a:hover::after {
+.menu__hamburger .menu__container-link > div li a:hover::after {
   transform: scaleX(1);
 }
 .menu__hamburger .menu__container-link > div p {
-  padding-top: 5px;
+  font-size: 0.85rem;
+  padding-top: 8px;
 }
 .menu__hamburger .menu__container-link > div p i {
   padding-right: 1.2rem;
