@@ -607,6 +607,8 @@ header .header .header__painting figure figcaption img {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: width 500ms, height 500ms, background-color 500ms, transform 500ms;
+  border-radius: 50%;
 }
 .video__icone-play:hover {
   background-color: #BAABEB;

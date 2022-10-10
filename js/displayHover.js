@@ -2,17 +2,27 @@
 const menuTitle = document.querySelectorAll('.menu__title');
 const menuLogo = document.querySelector('.menu__logo');
 const logo = document.querySelector('.sidebar__logo');
+const menu = document.querySelector('.menu');
+const containerPainting = document.querySelector('#container-painting');
+
 
 let timeOut;
 
-menuTitle.forEach(menu => {
-    menu.addEventListener('click', function() {
-        menuLogo.classList.add('bgLogo');
-        menuLogo.addEventListener("animationend", function () {
-            menuLogo.classList.remove('bgLogo');
-        })
+
+menu.addEventListener('click', function() {
+    menuLogo.classList.add('bgLogo');
+    menuLogo.addEventListener("animationend", function () {
+        menuLogo.classList.remove('bgLogo');
     })
 })
+
+containerPainting.addEventListener('click', function() {
+    menuLogo.classList.add('bgLogo');
+    menuLogo.addEventListener("animationend", function () {
+        menuLogo.classList.remove('bgLogo');
+    })
+})
+
 
 
 

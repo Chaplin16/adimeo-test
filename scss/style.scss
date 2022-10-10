@@ -512,7 +512,7 @@ header{
 
 
 .video{
-     text-align:center;
+    text-align:center;
     position: relative; 
     margin-left: 3rem;
     padding-bottom:2.5rem;
@@ -525,11 +525,11 @@ header{
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        
+        transition: width 500ms, height 500ms, background-color 500ms, transform 500ms;
+        border-radius: 50%;
         &:hover{
             background-color: $purple;
             border-radius: 50%;
-            //background-size: cover;
         }
     }
     &__image--title{
