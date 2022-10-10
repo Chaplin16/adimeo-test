@@ -619,6 +619,9 @@ footer{
     .block__left .block__left--button-tarif{
         font-size:0.9rem;
     }
+    .header__titre--social-networks{
+        column-gap: 1rem;
+    }
 }
 
 @media screen and (min-width: 800px){
@@ -634,6 +637,7 @@ footer{
         padding-top:1rem;
         padding-bottom:0!important;
     }
+
 }
 
 @media screen and (min-width: 1100px){
