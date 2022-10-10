@@ -18,12 +18,13 @@ const painting = [
 function displayPainting() {
     const containerPainting = document.querySelector('#container-painting');
     painting.forEach(function(e){
-        containerPainting.innerHTML += `<figure>
-                                            <img src="${e.img}"
-                                                alt="${e.alt}">
-                                            <h3>${e.h3}</h3>
-                                            <figcaption>${e.figcaption}</figcaption>
-                                        </figure>`
+        containerPainting.innerHTML +=
+           `<figure>
+                <img src="${e.img}"
+                    alt="${e.alt}">
+                <h3>${e.h3}</h3>
+                <figcaption>${e.figcaption}</figcaption>
+            </figure>`
     })
 }
 
